@@ -14,11 +14,11 @@
   "license": "Apache 2",
   "homepage": "https://github.com/sagiegurari/angular-web-notification.git",
   "ignore": [
-    "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "example"
   ],
   "dependencies": {
     "HTML5-Desktop-Notifications": "https://github.com/ttsvetko/HTML5-Desktop-Notifications.git",
