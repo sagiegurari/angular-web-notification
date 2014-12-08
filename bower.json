@@ -12,8 +12,7 @@
     "web notifications"
   ],
   "license": "Apache 2",
-  "homepage": "TODO",
-  "private": true,
+  "homepage": "https://github.com/sagiegurari/angular-web-notification.git",
   "ignore": [
     "**/.*",
     "node_modules",
