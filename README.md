@@ -10,7 +10,15 @@ It is using the HTML5-Desktop-Notifications library which provides a unified API
 See [W3 Specification](https://dvcs.w3.org/hg/notifications/raw-file/tip/Overview.html) and [HTML5-Desktop-Notifications](https://github.com/ttsvetko/HTML5-Desktop-Notifications) for more information.
 
 ## Usage
-In order to use the angular service you first must define it as a dependency in your main angular module as follows:
+In order to use the angular service you first must add the relevant dependencies:
+
+```
+<script type="text/javascript" src="angular.js"></script>
+<script type="text/javascript" src="HTML5-Desktop-Notifications/desktop-notify.js"></script>
+<script type="text/javascript" src="angular-web-notification.js"></script>
+```
+
+Next you must define it as a dependency in your main angular module as follows:
 
 ```js
 angular.module('exampleApp', [
