@@ -68,7 +68,7 @@ Please see [HTML5-Desktop-Notifications](https://github.com/ttsvetko/HTML5-Deskt
 
 ## Release History
 
- * 2014-12-08   v0.0.1   Initial release.
+ * 2014-12-08   v0.0.2   Initial release.
 
 ## License
 Developed by Sagie Gur-Ari and licensed under the Apache 2 open source license.
