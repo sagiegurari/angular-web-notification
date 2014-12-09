@@ -64,10 +64,11 @@ bower install angular-web-notification --save
 ## Limitations
 The web notifications API is not fully supported in all browsers.
 
-Please see [HTML5-Desktop-Notifications](https://github.com/ttsvetko/HTML5-Desktop-Notifications) for more information.
+Please see http://caniuse.com/#feat=notifications for more information on the official spec support and at [HTML5-Desktop-Notifications](https://github.com/ttsvetko/HTML5-Desktop-Notifications) for more browser specific API support.
 
 ## Release History
 
+ * 2014-12-09   v0.0.3   API now enables/disables the capability to automatically request for permissions needed to display the notification.
  * 2014-12-08   v0.0.2   Initial release.
 
 ## License
