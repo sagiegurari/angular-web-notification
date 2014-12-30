@@ -1,5 +1,7 @@
 # angular-web-notification
 
+[![Bower Version](https://img.shields.io/bower/v/angular-web-notification.svg?style=flat)](https://github.com/sagiegurari/angular-web-notification/releases)
+
 > Web Notifications AngularJS Service
 
 ## Overview
@@ -68,6 +70,7 @@ Please see http://caniuse.com/#feat=notifications for more information on the of
 
 ## Release History
 
+ * 2014-12-30   v0.0.4   Doc changes
  * 2014-12-09   v0.0.3   API now enables/disables the capability to automatically request for permissions needed to display the notification.
  * 2014-12-08   v0.0.2   Initial release.
 
