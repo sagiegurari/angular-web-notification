@@ -68,6 +68,50 @@
             };
         };
 
+        /**
+         * @ngdoc method
+         * @function
+         * @memberof! webNotification
+         * @alias webNotification.parseInput
+         * @private
+         *
+         * @description
+         * Returns an object with the show notification input.
+         *
+         * @param {array} argumentsArray - An array of all arguments provided to the show notification function
+         * @returns {object} The parsed data
+         */
+        var parseInput = function (argumentsArray) {
+            //callback is always the last argument
+            var callback = argumentsArray.pop();
+
+            var title = null;
+            var options = null;
+            if (argumentsArray.length === 2) {
+                title = argumentsArray[0];
+                options = argumentsArray[1];
+            } else if (argumentsArray.length === 1) {
+                var value = argumentsArray.pop();
+                if (typeof value === 'string') {
+                    title = value || '';
+                    options = {};
+                } else {
+                    title = '';
+                    options = value;
+                }
+            }
+
+            //set defaults
+            title = title || '';
+            options = options || {};
+
+            return {
+                callback: callback,
+                title: title,
+                options: options
+            };
+        };
+
         var service = {
             /**
              * True to enable automatic requesting of permissions if needed.
@@ -110,28 +154,12 @@
                 var argumentsArray = Array.prototype.slice.call(arguments, 0);
 
                 if ((argumentsArray.length >= 1) && (argumentsArray.length <= 3)) {
-                    //callback is always the last argument
-                    var callback = argumentsArray.pop();
+                    var data = parseInput(argumentsArray);
 
-                    var title = null;
-                    var options = null;
-                    if (argumentsArray.length === 2) {
-                        title = argumentsArray[0];
-                        options = argumentsArray[1];
-                    } else if (argumentsArray.length === 1) {
-                        var value = argumentsArray.pop();
-                        if (typeof value === 'string') {
-                            title = value || '';
-                            options = {};
-                        } else {
-                            title = '';
-                            options = value;
-                        }
-                    }
-
-                    //set defaults
-                    title = title || '';
-                    options = options || {};
+                    //get values
+                    var callback = data.callback;
+                    var title = data.title;
+                    var options = data.options;
 
                     var hideNotification = null;
                     if (isEnabled()) {
