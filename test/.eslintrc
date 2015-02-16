@@ -1,0 +1,13 @@
+{
+  "env": {
+    "browser": true,
+    "jasmine": true
+  },
+  "globals": {
+    "angular": true,
+    "notify": true,
+    "assert": true,
+    "inject": true,
+    "module": true
+  }
+}

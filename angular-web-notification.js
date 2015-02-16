@@ -8,6 +8,8 @@
     /**
      * @ngdoc service
      * @name webNotification
+     * @namespace webNotification
+     * @author Sagie Gur-Ari
      * @returns {object} The service instance
      *
      * @description
@@ -18,6 +20,18 @@
             autoClose: 0
         });
 
+        /**
+         * @ngdoc method
+         * @function
+         * @memberof! webNotification
+         * @alias webNotification.isEnabled
+         * @private
+         *
+         * @description
+         * Checks if web notifications are permitted.
+         *
+         * @returns {boolean} True if allowed to show web notifications
+         */
         var isEnabled = function () {
             var enabled = notifyLib.isSupported;
 
@@ -32,6 +46,20 @@
             return enabled;
         };
 
+        /**
+         * @ngdoc method
+         * @function
+         * @memberof! webNotification
+         * @alias webNotification.createAndDisplayNotification
+         * @private
+         *
+         * @description
+         * Displays the web notification and returning a 'hide' notification function.
+         *
+         * @param {string} title - The notification title text (defaulted to empty string if null is provided)
+         * @param {object} options - Holds the notification data (web notification API spec for more info)
+         * @returns {function} The hide notification function
+         */
         var createAndDisplayNotification = function (title, options) {
             var notification = notifyLib.createNotification(title, options);
 
@@ -45,6 +73,7 @@
              * True to enable automatic requesting of permissions if needed.
              *
              * @memberof! webNotification
+             * @alias webNotification.allowRequest
              * @public
              */
             allowRequest: true,//true to enable automatic requesting of permissions if needed
@@ -55,23 +84,26 @@
              *
              * @function
              * @memberof! webNotification
+             * @alias webNotification.showNotification
              * @public
              * @param {string} [title] - The notification title text (defaulted to empty string if null is provided)
              * @param {object} [options] - Holds the notification data (web notification API spec for more info)
              * @param {function} callback - Called after the show is handled.
              * @example
-             * webNotification.showNotification('Example Notification', {
-             *      body: 'Notification Text...',
-             *      icon: 'my-icon.ico'
-             * }, function onShow(error, hide) {
-             *  if (error) {
-             *      window.alert('Unable to show notification: ' + error.message);
-             *  } else {
-             *      setTimeout(function hideNotification() {
-             *          hide();
-             *      }, 5000);
-             *  }
-             * });
+             ```js
+             webNotification.showNotification('Example Notification', {
+                body: 'Notification Text...',
+                icon: 'my-icon.ico'
+             }, function onShow(error, hide) {
+                if (error) {
+                    window.alert('Unable to show notification: ' + error.message);
+                } else {
+                    setTimeout(function hideNotification() {
+                        hide();
+                    }, 5000);
+                }
+             });
+             ```
              */
             showNotification: function () {
                 //convert to array to enable modifications
@@ -96,6 +128,10 @@
                             options = value;
                         }
                     }
+
+                    //set defaults
+                    title = title || '';
+                    options = options || {};
 
                     var hideNotification = null;
                     if (isEnabled()) {
