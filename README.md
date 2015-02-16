@@ -73,7 +73,7 @@ See full docs at: [API Docs](docs/api.md)
 
 ## Release History
 
- * 2015-02-16   v0.0.6   Automatic unit tests via karma
+ * 2015-02-16   v0.0.7   Automatic unit tests via karma
  * 2015-02-05   v0.0.5   Doc changes
  * 2014-12-30   v0.0.4   Doc changes
  * 2014-12-09   v0.0.3   API now enables/disables the capability to automatically request for permissions needed to display the notification.
