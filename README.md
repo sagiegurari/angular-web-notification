@@ -14,7 +14,7 @@ See [W3 Specification](https://dvcs.w3.org/hg/notifications/raw-file/tip/Overvie
 ## Usage
 In order to use the angular service you first must add the relevant dependencies:
 
-```
+```html
 <script type="text/javascript" src="angular.js"></script>
 <script type="text/javascript" src="HTML5-Desktop-Notifications/desktop-notify.js"></script>
 <script type="text/javascript" src="angular-web-notification.js"></script>
