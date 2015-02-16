@@ -1,0 +1,42 @@
+{
+  "name": "angular-web-notification",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AngularJS service for displaying web notifications.",
+  "author": {
+    "name": "Sagie Gur-Ari",
+    "email": "sgurari@yahoo.com"
+  },
+  "main": "angular-web-notification.js",
+  "directories": {
+    "test": "test/spec",
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sagiegurari/angular-web-notification.git"
+  },
+  "keywords": [
+    "angularjs",
+    "web",
+    "notification"
+  ],
+  "devDependencies": {
+    "jsdoc-to-markdown": "*",
+    "karma": "*",
+    "karma-cli": "*",
+    "karma-mocha": "*",
+    "karma-phantomjs-launcher": "*",
+    "karma-sinon-chai": "*",
+    "mocha": "*"
+  },
+  "scripts": {
+    "test": "karma start karma.conf.js --single-run",
+    "docs": "jsdoc2md angular-web-notification.js > docs/api.md"
+  },
+  "license": "Apache 2",
+  "bugs": {
+    "url": "https://github.com/sagiegurari/angular-web-notification/issues"
+  },
+  "homepage": "https://github.com/sagiegurari/angular-web-notification"
+}

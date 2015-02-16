@@ -1,6 +1,6 @@
 # angular-web-notification
 
-[![Bower Version](https://img.shields.io/bower/v/angular-web-notification.svg?style=flat)](https://github.com/sagiegurari/angular-web-notification/releases) [![bitHound Score](https://www.bithound.io/sagiegurari/angular-web-notification/badges/score.svg)](https://www.bithound.io/sagiegurari/angular-web-notification)
+[![Bower Version](https://img.shields.io/bower/v/angular-web-notification.svg?style=flat)](https://github.com/sagiegurari/angular-web-notification/releases) [![Build Status](https://img.shields.io/travis/sagiegurari/angular-web-notification.svg?style=flat)](http://travis-ci.org/sagiegurari/angular-web-notification) [![bitHound Score](https://www.bithound.io/sagiegurari/angular-web-notification/badges/score.svg)](https://www.bithound.io/sagiegurari/angular-web-notification)
 
 > Web Notifications AngularJS Service
 
@@ -14,7 +14,7 @@ See [W3 Specification](https://dvcs.w3.org/hg/notifications/raw-file/tip/Overvie
 ## Usage
 In order to use the angular service you first must add the relevant dependencies:
 
-```
+```html
 <script type="text/javascript" src="angular.js"></script>
 <script type="text/javascript" src="HTML5-Desktop-Notifications/desktop-notify.js"></script>
 <script type="text/javascript" src="angular-web-notification.js"></script>
@@ -68,8 +68,12 @@ The web notifications API is not fully supported in all browsers.
 
 Please see http://caniuse.com/#feat=notifications for more information on the official spec support and at [HTML5-Desktop-Notifications](https://github.com/ttsvetko/HTML5-Desktop-Notifications) for more browser specific API support.
 
+## API Documentation
+See full docs at: [API Docs](docs/api.md)
+
 ## Release History
 
+ * 2015-02-16   v0.0.6   Automatic unit tests via karma
  * 2015-02-05   v0.0.5   Doc changes
  * 2014-12-30   v0.0.4   Doc changes
  * 2014-12-09   v0.0.3   API now enables/disables the capability to automatically request for permissions needed to display the notification.

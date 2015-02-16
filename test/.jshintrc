@@ -22,6 +22,11 @@
   "globals": {
     "angular": true,
     "notify": true,
+    "assert": true,
+    "describe": true,
+    "it": true,
+    "beforeEach": true,
+    "inject": true,
     "module": true
   }
 }
