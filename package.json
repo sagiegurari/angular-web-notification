@@ -32,7 +32,7 @@
   },
   "scripts": {
     "test": "karma start karma.conf.js --single-run",
-    "docs": "jsdoc2md angular-web-notification.js > api.md"
+    "docs": "jsdoc2md angular-web-notification.js > docs/api.md"
   },
   "license": "Apache 2",
   "bugs": {
