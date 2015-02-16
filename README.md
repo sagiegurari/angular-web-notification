@@ -68,8 +68,12 @@ The web notifications API is not fully supported in all browsers.
 
 Please see http://caniuse.com/#feat=notifications for more information on the official spec support and at [HTML5-Desktop-Notifications](https://github.com/ttsvetko/HTML5-Desktop-Notifications) for more browser specific API support.
 
+## API Documentation
+See full docs at: [API Docs](docs/api.md)
+
 ## Release History
 
+ * 2015-02-16   v0.0.6   Automatic unit tests via karma
  * 2015-02-05   v0.0.5   Doc changes
  * 2014-12-30   v0.0.4   Doc changes
  * 2014-12-09   v0.0.3   API now enables/disables the capability to automatically request for permissions needed to display the notification.
