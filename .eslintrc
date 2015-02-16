@@ -4,7 +4,8 @@
   },
   "globals": {
     "angular": true,
-    "notify": true
+    "notify": true,
+    "module": true
   },
   "rules": {
     "block-scoped-var": 0,
