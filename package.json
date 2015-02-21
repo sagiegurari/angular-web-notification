@@ -27,8 +27,7 @@
     "karma-cli": "*",
     "karma-mocha": "*",
     "karma-phantomjs-launcher": "*",
-    "karma-sinon-chai": "*",
-    "mocha": "*"
+    "karma-sinon-chai": "*"
   },
   "scripts": {
     "test": "karma start karma.conf.js --single-run",
