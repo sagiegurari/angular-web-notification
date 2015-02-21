@@ -79,7 +79,7 @@ See full docs at: [API Docs](docs/api.md)
 | 2015-02-16  | v0.0.7  | Automatic unit tests via karma |
 | 2015-02-05  | v0.0.5  | Doc changes |
 | 2014-12-30  | v0.0.4  | Doc changes |
-| 2014-12-09  | v0.0.3  | API now enables/disables the capability to automatically request for permissions needed to display the notification. |
+| 2014-12-09  | v0.0.3  | API now enables/disables the<br>capability to automatically request for<br>permissions needed to display the notification. |
 | 2014-12-08  | v0.0.2  | Initial release |
 
 ## License
