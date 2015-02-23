@@ -26,5 +26,12 @@
   "maxstatements": 50,
   "globalstrict": true,
   "browser": true,
-  "mocha": true
+  "mocha": true,
+  "globals": {
+    "angular": true,
+    "notify": true,
+    "module": true,
+    "assert": true,
+    "inject": true
+  }
 }
