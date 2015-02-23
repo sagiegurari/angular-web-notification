@@ -25,5 +25,10 @@
   "maxparams": 5,
   "maxstatements": 50,
   "globalstrict": true,
-  "browser": true
+  "browser": true,
+  "globals": {
+    "angular": true,
+    "notify": true,
+    "module": true
+  }
 }
