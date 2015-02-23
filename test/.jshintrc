@@ -22,20 +22,9 @@
   "maxdepth": 5,
   "maxerr": 100,
   "maxlen": 250,
-  "maxparams": 3,
+  "maxparams": 5,
   "maxstatements": 50,
   "globalstrict": true,
-  "globals": {
-    "window": true,
-    "setTimeout": true,
-    "clearTimeout": true,
-    "angular": true,
-    "notify": true,
-    "assert": true,
-    "describe": true,
-    "it": true,
-    "beforeEach": true,
-    "inject": true,
-    "module": true
-  }
+  "browser": true,
+  "mocha": true
 }
