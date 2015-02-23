@@ -15,7 +15,7 @@
   "nonbsp": true,
   "nonew": true,
   "quotmark": "single",
-  "singleGroups": true,
+  "singleGroups": false,
   "undef": true,
   "unused": true,
   "maxcomplexity": 10,
@@ -26,6 +26,9 @@
   "maxstatements": 50,
   "globalstrict": true,
   "globals": {
+    "window": true,
+    "setTimeout": true,
+    "clearTimeout": true,
     "angular": true,
     "notify": true,
     "module": true
