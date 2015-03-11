@@ -9,6 +9,9 @@ describe('angular-web-notification', function () {
     var validShowValidation = function (error, hide, done) {
         assert.isNull(error);
         assert.isFunction(hide);
+
+        hide();
+
         done();
     };
     var errorValidation = function (error, hide, done) {
@@ -18,6 +21,10 @@ describe('angular-web-notification', function () {
     };
 
     beforeEach(angular.mock.module('angular-web-notification'));
+
+    beforeEach(inject(function (webNotification) {
+        webNotification.allowRequest = true;
+    }));
 
     it('init test', inject(function (webNotification) {
         assert.isObject(webNotification);
@@ -97,6 +104,42 @@ describe('angular-web-notification', function () {
                     });
                 });
             });
+
+            it('showNotification first time permissions test', function (done) {
+                inject(function (webNotification) {
+                    window.notify.setFirstTimePermissions(function (title, options) {
+                        assert.equal(title, 'first time');
+                        assert.deepEqual(options, {});
+                    });
+
+                    webNotification.showNotification('first time', {}, function onShow(error, hide) {
+                        validShowValidation(error, hide, done);
+                    });
+                });
+            });
+        });
+
+        describe('showNotification not allowed tests', function () {
+            it('showNotification not allowed test', function (done) {
+                inject(function (webNotification) {
+                    window.notify.setSupportedOnly();
+
+                    webNotification.showNotification('not allowed', {}, function onShow(error, hide) {
+                        errorValidation(error, hide, done);
+                    });
+                });
+            });
+
+            it('showNotification not allowed and not allowed to ask permissions test', function (done) {
+                inject(function (webNotification) {
+                    window.notify.setSupportedOnly();
+                    webNotification.allowRequest = false;
+
+                    webNotification.showNotification('no allowRequest', {}, function onShow(error, hide) {
+                        errorValidation(error, hide, done);
+                    });
+                });
+            });
         });
 
         it('showNotification not supported test', function (done) {
@@ -106,16 +149,6 @@ describe('angular-web-notification', function () {
                 webNotification.showNotification('not supported', {
                     icon: 'bad-icon.ico'
                 }, function onShow(error, hide) {
-                    errorValidation(error, hide, done);
-                });
-            });
-        });
-
-        it('showNotification not allowed test', function (done) {
-            inject(function (webNotification) {
-                window.notify.setSupportedOnly();
-
-                webNotification.showNotification('not allowed', {}, function onShow(error, hide) {
                     errorValidation(error, hide, done);
                 });
             });

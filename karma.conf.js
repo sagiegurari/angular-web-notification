@@ -1,4 +1,3 @@
-
 module.exports = function (config) {
     'use strict';
 
@@ -17,6 +16,19 @@ module.exports = function (config) {
         logLevel: config.LOG_INFO,
         autoWatch: false,
         browsers: ['PhantomJS'],
-        singleRun: false
+        singleRun: false,
+        reporters: ['progress', 'coverage'],
+        preprocessors: {
+            'angular-web-notification.js': ['coverage']
+        },
+        coverageReporter: {
+            dir: 'target/coverage/report',
+            reporters: [
+                {
+                    type: 'lcov',
+                    subdir: '.'
+                }
+            ]
+        }
     });
 };
