@@ -1,6 +1,6 @@
 {
   "name": "angular-web-notification",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "authors": [
     "Sagie Gur-Ari <sgurari@yahoo.com>"
   ],
@@ -18,7 +18,8 @@
     "bower_components",
     "test",
     "tests",
-    "example"
+    "example",
+    "target"
   ],
   "dependencies": {
     "HTML5-Desktop-Notifications": "https://github.com/ttsvetko/HTML5-Desktop-Notifications.git",

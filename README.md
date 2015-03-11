@@ -1,6 +1,6 @@
 # angular-web-notification
 
-[![Bower Version](https://img.shields.io/bower/v/angular-web-notification.svg?style=flat)](https://github.com/sagiegurari/angular-web-notification/releases) [![Build Status](https://img.shields.io/travis/sagiegurari/angular-web-notification.svg?style=flat)](http://travis-ci.org/sagiegurari/angular-web-notification) [![bitHound Score](https://www.bithound.io/sagiegurari/angular-web-notification/badges/score.svg)](https://www.bithound.io/sagiegurari/angular-web-notification) [![Inline docs](http://inch-ci.org/github/sagiegurari/angular-web-notification.svg?branch=master)](http://inch-ci.org/github/sagiegurari/angular-web-notification)
+[![Bower Version](https://img.shields.io/bower/v/angular-web-notification.svg?style=flat)](https://github.com/sagiegurari/angular-web-notification/releases) [![Build Status](https://img.shields.io/travis/sagiegurari/angular-web-notification.svg?style=flat)](http://travis-ci.org/sagiegurari/angular-web-notification) [![Coverage Status](https://img.shields.io/coveralls/sagiegurari/angular-web-notification.svg?style=flat)](https://coveralls.io/r/sagiegurari/angular-web-notification) [![bitHound Score](https://www.bithound.io/sagiegurari/angular-web-notification/badges/score.svg)](https://www.bithound.io/sagiegurari/angular-web-notification) [![Inline docs](http://inch-ci.org/github/sagiegurari/angular-web-notification.svg?branch=master)](http://inch-ci.org/github/sagiegurari/angular-web-notification)
 
 > Web Notifications AngularJS Service
 
@@ -75,7 +75,7 @@ See full docs at: [API Docs](docs/api.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2015-03-11  | v0.0.12 | Maintenance |
+| 2015-03-12  | v0.0.13 | Maintenance |
 | 2015-02-16  | v0.0.7  | Automatic unit tests via karma |
 | 2015-02-05  | v0.0.5  | Doc changes |
 | 2014-12-30  | v0.0.4  | Doc changes |

@@ -24,28 +24,50 @@ window.notify = (function () {
     lib.createNotification = function (title, options) {
         lib.validateNotification(title, options);
 
-        return function mockClose() {
+        return {
+            close: function mockClose() {
+                return undefined;
+            }
+        };
+    };
+
+    lib.setValidationNotification = function (validateNotification) {
+        lib.validateNotification = validateNotification || function () {
             return undefined;
         };
     };
 
     lib.setAllowed = function (validateNotification) {
-        lib.validateNotification = validateNotification || function () {
-            return undefined;
-        };
+        lib.setValidationNotification(validateNotification);
 
         lib.isSupported = true;
         permission = 'granted';
     };
 
     lib.setSupportedOnly = function () {
+        lib.setValidationNotification(null);
         lib.isSupported = true;
         permission = 'not-granted';
     };
 
     lib.setNotSupported = function () {
+        lib.setValidationNotification(null);
         lib.isSupported = false;
         permission = 'not-granted';
+    };
+
+    lib.setFirstTimePermissions = function (validateNotification) {
+        lib.orgRequestPermission = lib.requestPermission;
+        lib.setValidationNotification(validateNotification);
+
+        lib.requestPermission = function (callback) {
+            permission = 'granted';
+
+            lib.orgRequestPermission(callback);
+            lib.requestPermission = lib.orgRequestPermission;
+        };
+
+        lib.setSupportedOnly();
     };
 
     return lib;

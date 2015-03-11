@@ -22,16 +22,29 @@
     "notification"
   ],
   "devDependencies": {
-    "jsdoc-to-markdown": "*",
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-coveralls": "*",
+    "grunt-eslint": "*",
+    "grunt-jsdoc-to-markdown": "*",
+    "grunt-jslint": "*",
+    "grunt-jsonlint": "*",
+    "grunt-karma": "*",
+    "grunt-todos": "*",
     "karma": "*",
     "karma-cli": "*",
+    "karma-coverage": "*",
     "karma-mocha": "*",
     "karma-phantomjs-launcher": "*",
-    "karma-sinon-chai": "*"
+    "karma-sinon-chai": "*",
+    "load-grunt-tasks": "*",
+    "time-grunt": "*"
   },
   "scripts": {
-    "test": "karma start karma.conf.js --single-run",
-    "docs": "jsdoc2md angular-web-notification.js > docs/api.md"
+    "test": "grunt continuesIntegration",
+    "docs": "grunt jsdoc2md:api"
   },
   "license": "Apache 2",
   "bugs": {

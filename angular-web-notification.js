@@ -93,7 +93,7 @@
             } else if (argumentsArray.length === 1) {
                 var value = argumentsArray.pop();
                 if (typeof value === 'string') {
-                    title = value || '';
+                    title = value;
                     options = {};
                 } else {
                     title = '';
