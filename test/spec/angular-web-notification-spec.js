@@ -1,3 +1,4 @@
+/*global describe: false, assert: false, inject: false, it: false, angular: false, beforeEach: false */
 
 describe('angular-web-notification', function () {
     'use strict';
