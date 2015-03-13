@@ -28,8 +28,6 @@
   "browser": true,
   "globals": {
     "angular": true,
-    "notify": true,
-    "module": true,
-    "require": true
+    "notify": true
   }
 }

@@ -1,6 +1,8 @@
-'use strict';
+/*global module: false, require: false */
 
 module.exports = function (grunt) {
+    'use strict';
+
     require('time-grunt')(grunt);
     require('load-grunt-tasks')(grunt);
 
@@ -84,17 +86,6 @@ module.exports = function (grunt) {
                     '<%=BuildConfig.testDirectory%>/**/*.js',
                     '<%=BuildConfig.exampleDirectory%>/**/*.js'
                 ]
-            }
-        },
-
-        blanket: {
-            full: {
-                options: {
-                    'data-cover-only': 'angular-web-notification.js'
-                },
-                files: {
-                    'target/coverage/': ['./']
-                }
             }
         },
 
