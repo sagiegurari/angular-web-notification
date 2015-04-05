@@ -74,6 +74,19 @@ module.exports = function (grunt) {
             }
         },
 
+        jscs: {
+            full: {
+                options: {
+                    config: '.jscs.json'
+                },
+                files: {
+                    src: [
+                        'angular-web-notification.js'
+                    ]
+                }
+            }
+        },
+
         todos: {
             options: {
                 priorities: {
@@ -123,6 +136,7 @@ module.exports = function (grunt) {
         'jshint:full',
         'jslint:full',
         'eslint:full',
+        'jscs:full',
         'todos:full',
         'jsdoc2md:api',
         'coverage'
@@ -138,6 +152,7 @@ module.exports = function (grunt) {
         'jshint:full',
         'jslint:full',
         'eslint:full',
+        'jscs:full',
         'todos:full',
         'coverage',
         'coveralls:full'
