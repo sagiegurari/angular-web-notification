@@ -28,6 +28,7 @@
     "grunt-contrib-jshint": "*",
     "grunt-coveralls": "*",
     "grunt-eslint": "*",
+    "grunt-jscs": "*",
     "grunt-jsdoc-to-markdown": "*",
     "grunt-jslint": "*",
     "grunt-jsonlint": "*",
