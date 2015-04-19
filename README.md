@@ -11,6 +11,9 @@ It is using the HTML5-Desktop-Notifications library which provides a unified API
 
 See [W3 Specification](https://dvcs.w3.org/hg/notifications/raw-file/tip/Overview.html) and [HTML5-Desktop-Notifications](https://github.com/ttsvetko/HTML5-Desktop-Notifications) for more information.
 
+### Demo
+[Live Demo at Plunker](http://plnkr.co/edit/anlhIr?p=preview)
+
 ## Usage
 In order to use the angular service you first must add the relevant dependencies:
 
@@ -75,7 +78,7 @@ See full docs at: [API Docs](docs/api.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2015-04-05  | v0.0.16 | Maintenance |
+| 2015-04-19  | v0.0.17 | Maintenance |
 | 2015-02-16  | v0.0.7  | Automatic unit tests via karma |
 | 2015-02-05  | v0.0.5  | Doc changes |
 | 2014-12-30  | v0.0.4  | Doc changes |
