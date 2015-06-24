@@ -134,20 +134,20 @@
              * @param {object} [options] - Holds the notification data (web notification API spec for more info)
              * @param {function} callback - Called after the show is handled.
              * @example
-             ```js
-             webNotification.showNotification('Example Notification', {
-                body: 'Notification Text...',
-                icon: 'my-icon.ico'
-             }, function onShow(error, hide) {
-                if (error) {
-                    window.alert('Unable to show notification: ' + error.message);
-                } else {
-                    setTimeout(function hideNotification() {
-                        hide();
-                    }, 5000);
-                }
-             });
-             ```
+             * ```js
+             * webNotification.showNotification('Example Notification', {
+             *    body: 'Notification Text...',
+             *    icon: 'my-icon.ico'
+             * }, function onShow(error, hide) {
+             *    if (error) {
+             *        window.alert('Unable to show notification: ' + error.message);
+             *    } else {
+             *        setTimeout(function hideNotification() {
+             *            hide();
+             *        }, 5000);
+             *    }
+             * });
+             * ```
              */
             showNotification: function () {
                 //convert to array to enable modifications
