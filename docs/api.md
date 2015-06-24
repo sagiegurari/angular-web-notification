@@ -32,16 +32,16 @@ case of no errors) and a 'hide' function which can be used to hide the notificat
 
 **Example**  
 ```js
- webNotification.showNotification('Example Notification', {
-    body: 'Notification Text...',
-    icon: 'my-icon.ico'
- }, function onShow(error, hide) {
-    if (error) {
-        window.alert('Unable to show notification: ' + error.message);
-    } else {
-        setTimeout(function hideNotification() {
-            hide();
-        }, 5000);
-    }
- });
- ```
+webNotification.showNotification('Example Notification', {
+   body: 'Notification Text...',
+   icon: 'my-icon.ico'
+}, function onShow(error, hide) {
+   if (error) {
+       window.alert('Unable to show notification: ' + error.message);
+   } else {
+       setTimeout(function hideNotification() {
+           hide();
+       }, 5000);
+   }
+});
+```
