@@ -16,7 +16,7 @@ describe('angular-web-notification', function () {
         done();
     };
     var errorValidation = function (error, hide, done) {
-        assert.isObject(error);
+        assert.isDefined(error);
         assert.isNull(hide);
         done();
     };
