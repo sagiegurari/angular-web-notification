@@ -4,3 +4,4 @@ node_js:
 before_script:
   - npm install -g bower@1.3.12
   - bower install
+sudo: false
