@@ -123,7 +123,7 @@ module.exports = function (grunt) {
             api: {
                 options: {
                     index: true,
-                    'private': false
+                    private: false
                 },
                 src: 'angular-web-notification.js',
                 dest: 'docs/api.md'

@@ -1,5 +1,13 @@
 /*global notify: false, angular: false */
 
+/**
+ * 'showNotification' callback.
+ *
+ * @callback ShowNotificationCallback
+ * @param {error} [error] - The error object in case of any error
+ * @param {function} [hide] - The hide notification function
+ */
+
 (function (notifyLib) {
     'use strict';
 
@@ -132,7 +140,8 @@
              * @public
              * @param {string} [title] - The notification title text (defaulted to empty string if null is provided)
              * @param {object} [options] - Holds the notification data (web notification API spec for more info)
-             * @param {function} callback - Called after the show is handled.
+             * @param {ShowNotificationCallback} callback - Called after the show is handled.
+             * @returns {*} The callback function return value or undefined
              * @example
              * ```js
              * webNotification.showNotification('Example Notification', {
@@ -164,18 +173,20 @@
                     var hideNotification = null;
                     if (isEnabled()) {
                         hideNotification = createAndDisplayNotification(title, options);
-                        callback(null, hideNotification);
-                    } else if (service.allowRequest) {
+                        return callback(null, hideNotification);
+                    }
+
+                    if (service.allowRequest) {
                         notifyLib.requestPermission(function onRequestDone() {
                             if (isEnabled()) {
                                 hideNotification = createAndDisplayNotification(title, options);
-                                callback(null, hideNotification);
-                            } else {
-                                callback(new Error('Notifications are not enabled.'), null);
+                                return callback(null, hideNotification);
                             }
+
+                            return callback(new Error('Notifications are not enabled.'), null);
                         });
                     } else {
-                        callback(new Error('Notifications are not enabled.'), null);
+                        return callback(new Error('Notifications are not enabled.'), null);
                     }
                 }
             }
