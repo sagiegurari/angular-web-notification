@@ -1,4 +1,4 @@
-/*global notify: false, angular: false */
+/*global angular: false */
 
 /**
  * 'showNotification' callback.
