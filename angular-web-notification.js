@@ -194,4 +194,4 @@
 
         return service;
     });
-}(notify));
+}(window.notify));
