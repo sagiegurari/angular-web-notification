@@ -1,6 +1,6 @@
 {
   "name": "angular-web-notification",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "authors": [
     "Sagie Gur-Ari <sgurari@yahoo.com>"
   ],
@@ -12,7 +12,7 @@
     "web notifications"
   ],
   "license": "Apache 2",
-  "homepage": "https://github.com/sagiegurari/angular-web-notification.git",
+  "homepage": "http://github.com/sagiegurari/angular-web-notification",
   "ignore": [
     "node_modules",
     "bower_components",
