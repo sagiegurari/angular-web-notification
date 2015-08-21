@@ -1,5 +1,3 @@
-/*global angular: false */
-
 /**
  * 'showNotification' callback.
  *
@@ -11,7 +9,7 @@
 (function (notifyLib) {
     'use strict';
 
-    var webNotification = angular.module('angular-web-notification', []);
+    var webNotification = window.angular.module('angular-web-notification', []);
 
     /**
      * @ngdoc service
