@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sagiegurari/angular-web-notification.git"
+    "url": "http://github.com/sagiegurari/angular-web-notification.git"
   },
   "keywords": [
     "angularjs",
@@ -22,34 +22,34 @@
     "notification"
   ],
   "devDependencies": {
-    "grunt": "*",
-    "grunt-cli": "*",
-    "grunt-contrib-clean": "*",
-    "grunt-contrib-jshint": "*",
-    "grunt-coveralls": "*",
-    "grunt-eslint": "*",
-    "grunt-jscs": "*",
-    "grunt-jsdoc-to-markdown": "*",
-    "grunt-jslint": "*",
-    "grunt-jsonlint": "*",
-    "grunt-karma": "*",
-    "grunt-todos": "*",
-    "karma": "*",
-    "karma-cli": "*",
-    "karma-coverage": "*",
-    "karma-mocha": "*",
-    "karma-phantomjs-launcher": "*",
-    "karma-sinon-chai": "*",
-    "load-grunt-tasks": "*",
-    "time-grunt": "*"
+    "grunt": "latest",
+    "grunt-cli": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-coveralls": "latest",
+    "grunt-eslint": "latest",
+    "grunt-jscs": "latest",
+    "grunt-jsdoc-to-markdown": "latest",
+    "grunt-jslint": "latest",
+    "grunt-jsonlint": "latest",
+    "grunt-karma": "latest",
+    "grunt-todos": "latest",
+    "karma": "latest",
+    "karma-cli": "latest",
+    "karma-coverage": "latest",
+    "karma-mocha": "latest",
+    "karma-phantomjs-launcher": "latest",
+    "karma-sinon-chai": "latest",
+    "load-grunt-tasks": "latest",
+    "time-grunt": "latest"
   },
   "scripts": {
     "test": "grunt continuesIntegration",
     "docs": "grunt jsdoc2md:api"
   },
-  "license": "Apache 2",
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/sagiegurari/angular-web-notification/issues"
+    "url": "http://github.com/sagiegurari/angular-web-notification/issues"
   },
-  "homepage": "https://github.com/sagiegurari/angular-web-notification"
+  "homepage": "http://github.com/sagiegurari/angular-web-notification"
 }
