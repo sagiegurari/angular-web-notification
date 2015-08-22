@@ -21,7 +21,7 @@ The web notification service wraps the HTML 5 Web Notifications API as an angula
 
 * [webNotification](#webNotification) ⇒ <code>object</code>
   * [.allowRequest](#webNotification.allowRequest)
-  * [.showNotification([title], [options], callback)](#webNotification.showNotification) ⇒ <code>\*</code>
+  * [.showNotification([title], [options], callback)](#webNotification.showNotification)
 
 <a name="webNotification.allowRequest"></a>
 ### webNotification.allowRequest
@@ -29,12 +29,11 @@ True to enable automatic requesting of permissions if needed.
 
 **Access:** public  
 <a name="webNotification.showNotification"></a>
-### webNotification.showNotification([title], [options], callback) ⇒ <code>\*</code>
+### webNotification.showNotification([title], [options], callback)
 Shows the notification based on the provided input.<br>
 The callback invoked will get an error object (in case of an error, null in
 case of no errors) and a 'hide' function which can be used to hide the notification.
 
-**Returns**: <code>\*</code> - The callback function return value or undefined  
 **Access:** public  
 
 | Param | Type | Description |

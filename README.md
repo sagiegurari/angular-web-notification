@@ -79,7 +79,7 @@ See full docs at: [API Docs](docs/api.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2015-08-21  | v0.0.24 | Maintenance |
+| 2015-08-22  | v0.0.25 | Maintenance |
 | 2015-08-16  | v0.0.22 | uglify fix |
 | 2015-08-02  | v0.0.21 | Maintenance |
 | 2015-02-16  | v0.0.7  | Automatic unit tests via karma |

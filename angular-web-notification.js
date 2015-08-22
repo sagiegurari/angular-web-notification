@@ -139,7 +139,6 @@
              * @param {string} [title] - The notification title text (defaulted to empty string if null is provided)
              * @param {object} [options] - Holds the notification data (web notification API spec for more info)
              * @param {ShowNotificationCallback} callback - Called after the show is handled.
-             * @returns {*} The callback function return value or undefined
              * @example
              * ```js
              * webNotification.showNotification('Example Notification', {
@@ -171,20 +170,18 @@
                     var hideNotification = null;
                     if (isEnabled()) {
                         hideNotification = createAndDisplayNotification(title, options);
-                        return callback(null, hideNotification);
-                    }
-
-                    if (service.allowRequest) {
+                        callback(null, hideNotification);
+                    } else if (service.allowRequest) {
                         notifyLib.requestPermission(function onRequestDone() {
                             if (isEnabled()) {
                                 hideNotification = createAndDisplayNotification(title, options);
-                                return callback(null, hideNotification);
+                                callback(null, hideNotification);
+                            } else {
+                                callback(new Error('Notifications are not enabled.'), null);
                             }
-
-                            return callback(new Error('Notifications are not enabled.'), null);
                         });
                     } else {
-                        return callback(new Error('Notifications are not enabled.'), null);
+                        callback(new Error('Notifications are not enabled.'), null);
                     }
                 }
             }
