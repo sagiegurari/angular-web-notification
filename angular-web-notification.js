@@ -22,10 +22,6 @@
      * The web notification service wraps the HTML 5 Web Notifications API as an angular service.
      */
     webNotification.factory('webNotification', function onCreateService() {
-        notifyLib.config({
-            autoClose: 0
-        });
-
         /**
          * @ngdoc method
          * @function
@@ -67,6 +63,14 @@
          * @returns {function} The hide notification function
          */
         var createAndDisplayNotification = function (title, options) {
+            var autoClose = 0;
+            if (options && options.autoClose && (typeof options.autoClose === 'number')) {
+                autoClose = options.autoClose;
+            }
+            notifyLib.config({
+                autoClose: autoClose
+            });
+
             var notification = notifyLib.createNotification(title, options);
 
             return function hideNotification() {
@@ -138,6 +142,7 @@
              * @public
              * @param {string} [title] - The notification title text (defaulted to empty string if null is provided)
              * @param {object} [options] - Holds the notification data (web notification API spec for more info)
+             * @param {number} [options.autoClose] - Auto closes the notification after the provided amount of millies (0 or undefined for no auto close)
              * @param {ShowNotificationCallback} callback - Called after the show is handled.
              * @example
              * ```js

@@ -1,4 +1,4 @@
-/*global describe: false, assert: false, inject: false, it: false, angular: false, beforeEach: false */
+/*global describe: false, assert: false, inject: false, it: false, beforeEach: false */
 
 describe('angular-web-notification', function () {
     'use strict';
@@ -21,7 +21,7 @@ describe('angular-web-notification', function () {
         done();
     };
 
-    beforeEach(angular.mock.module('angular-web-notification'));
+    beforeEach(window.angular.mock.module('angular-web-notification'));
 
     beforeEach(inject(function (webNotification) {
         webNotification.allowRequest = true;
@@ -29,10 +29,6 @@ describe('angular-web-notification', function () {
 
     it('init test', inject(function (webNotification) {
         assert.isObject(webNotification);
-
-        assert.deepEqual(window.notify.getConfig(), {
-            autoClose: 0
-        });
     }));
 
     describe('showNotification tests', function () {
@@ -51,6 +47,10 @@ describe('angular-web-notification', function () {
                         body: 'Notification Text...',
                         icon: 'my-icon.ico'
                     }, function onShow(error, hide) {
+                        assert.deepEqual(window.notify.getConfig(), {
+                            autoClose: 0
+                        });
+
                         validShowValidation(error, hide, done);
                     });
                 });
