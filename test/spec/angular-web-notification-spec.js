@@ -56,6 +56,31 @@ describe('angular-web-notification', function () {
                 });
             });
 
+            it('showNotification with auto close test', function (done) {
+                inject(function (webNotification) {
+                    window.notify.setAllowed(function (title, options) {
+                        assert.equal(title, 'Example Notification');
+                        assert.deepEqual(options, {
+                            body: 'Notification Text...',
+                            icon: 'my-icon.ico',
+                            autoClose: 600
+                        });
+                    });
+
+                    webNotification.showNotification('Example Notification', {
+                        body: 'Notification Text...',
+                        icon: 'my-icon.ico',
+                        autoClose: 600
+                    }, function onShow(error, hide) {
+                        assert.deepEqual(window.notify.getConfig(), {
+                            autoClose: 600
+                        });
+
+                        validShowValidation(error, hide, done);
+                    });
+                });
+            });
+
             it('showNotification no params test', function (done) {
                 inject(function (webNotification) {
                     window.notify.setAllowed(emptyValuesValidation);

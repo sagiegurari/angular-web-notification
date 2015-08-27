@@ -40,6 +40,7 @@ case of no errors) and a 'hide' function which can be used to hide the notificat
 | --- | --- | --- |
 | [title] | <code>string</code> | The notification title text (defaulted to empty string if null is provided) |
 | [options] | <code>object</code> | Holds the notification data (web notification API spec for more info) |
+| [options.autoClose] | <code>number</code> | Auto closes the notification after the provided amount of millies (0 or undefined for no auto close) |
 | callback | <code>[ShowNotificationCallback](#ShowNotificationCallback)</code> | Called after the show is handled. |
 
 **Example**  
