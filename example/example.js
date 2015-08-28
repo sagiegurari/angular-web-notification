@@ -1,6 +1,7 @@
-/*global angular: false, window: false, console: false */
+/*global console: false */
+/*jslint unparam: true*/
 
-angular.module('exampleApp', [
+window.angular.module('exampleApp', [
     'angular-web-notification'
 ]).directive('showButton', ['webNotification', function (webNotification) {
     'use strict';
@@ -12,7 +13,8 @@ angular.module('exampleApp', [
             element.on('click', function onClick() {
                 webNotification.showNotification('Example Notification', {
                     body: 'Notification Text...',
-                    icon: '../bower_components/HTML5-Desktop-Notifications/alert.ico'
+                    icon: '../bower_components/HTML5-Desktop-Notifications/alert.ico',
+                    autoClose: 4000 //auto close the notification after 2 seconds (you can manually close it via hide function)
                 }, function onShow(error, hide) {
                     if (error) {
                         window.alert('Unable to show notification: ' + error.message);
@@ -21,7 +23,7 @@ angular.module('exampleApp', [
 
                         setTimeout(function hideNotification() {
                             console.log('Hiding notification....');
-                            hide();
+                            hide(); //manually close the notification (you can skip this if you use the autoClose option)
                         }, 5000);
                     }
                 });

@@ -1,6 +1,6 @@
 # angular-web-notification
 
-[![Bower Version](https://img.shields.io/bower/v/angular-web-notification.svg?style=flat)](https://github.com/sagiegurari/angular-web-notification/releases) [![Build Status](https://img.shields.io/travis/sagiegurari/angular-web-notification.svg?style=flat)](http://travis-ci.org/sagiegurari/angular-web-notification) [![Coverage Status](https://img.shields.io/coveralls/sagiegurari/angular-web-notification.svg?style=flat)](https://coveralls.io/r/sagiegurari/angular-web-notification) [![Code Climate](https://codeclimate.com/github/sagiegurari/angular-web-notification/badges/gpa.svg)](https://codeclimate.com/github/sagiegurari/angular-web-notification) [![bitHound Score](https://www.bithound.io/sagiegurari/angular-web-notification/badges/score.svg)](https://www.bithound.io/sagiegurari/angular-web-notification) [![Inline docs](http://inch-ci.org/github/sagiegurari/angular-web-notification.svg?branch=master)](http://inch-ci.org/github/sagiegurari/angular-web-notification)
+[![Bower Version](https://img.shields.io/bower/v/angular-web-notification.svg?style=flat)](https://github.com/sagiegurari/angular-web-notification/releases) [![Build Status](https://img.shields.io/travis/sagiegurari/angular-web-notification.svg?style=flat)](http://travis-ci.org/sagiegurari/angular-web-notification) [![Coverage Status](https://img.shields.io/coveralls/sagiegurari/angular-web-notification.svg?style=flat)](https://coveralls.io/r/sagiegurari/angular-web-notification) [![Code Climate](https://codeclimate.com/github/sagiegurari/angular-web-notification/badges/gpa.svg)](https://codeclimate.com/github/sagiegurari/angular-web-notification) [![bitHound Score](https://www.bithound.io/sagiegurari/angular-web-notification/badges/score.svg)](https://www.bithound.io/sagiegurari/angular-web-notification) [![Inline docs](http://inch-ci.org/github/sagiegurari/angular-web-notification.svg?branch=master)](http://inch-ci.org/github/sagiegurari/angular-web-notification)<br>
 [![License](https://img.shields.io/github/license/sagiegurari/angular-web-notification.svg)](https://github.com/sagiegurari/angular-web-notification/blob/master/LICENSE)
 
 > Web Notifications AngularJS Service
@@ -13,7 +13,7 @@ It is using the HTML5-Desktop-Notifications library which provides a unified API
 See [W3 Specification](https://dvcs.w3.org/hg/notifications/raw-file/tip/Overview.html) and [HTML5-Desktop-Notifications](https://github.com/ttsvetko/HTML5-Desktop-Notifications) for more information.
 
 ## Demo
-[Live Demo at Plunker](http://plnkr.co/edit/anlhIr?p=preview)
+[Live Demo at Plunker](http://plnkr.co/edit/SUTiBu?p=preview)
 
 ## Usage
 In order to use the angular service you first must add the relevant dependencies:
@@ -42,7 +42,8 @@ return {
         element.on('click', function onClick() {
             webNotification.showNotification('Example Notification', {
                 body: 'Notification Text...',
-                icon: 'my-icon.ico'
+                icon: 'my-icon.ico',
+                autoClose: 4000 //auto close the notification after 2 seconds (you can manually close it via hide function)
             }, function onShow(error, hide) {
                 if (error) {
                     window.alert('Unable to show notification: ' + error.message);
@@ -51,7 +52,7 @@ return {
 
                     setTimeout(function hideNotification() {
                         console.log('Hiding notification....');
-                        hide();
+                        hide(); //manually close the notification (you can skip this if you use the autoClose option)
                     }, 5000);
                 }
             });
@@ -79,7 +80,7 @@ See full docs at: [API Docs](docs/api.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2015-08-27  | v0.0.26 | Maintenance |
+| 2015-08-28  | v0.0.27 | Maintenance |
 | 2015-08-16  | v0.0.22 | uglify fix |
 | 2015-08-02  | v0.0.21 | Maintenance |
 | 2015-02-16  | v0.0.7  | Automatic unit tests via karma |
