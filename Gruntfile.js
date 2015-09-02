@@ -131,30 +131,42 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('full', 'Run all build steps.', [
+    grunt.registerTask('cleanup', 'Cleanups', [
+        'clean:target'
+    ]);
+
+    grunt.registerTask('lint', 'Linting tasks.', [
         'jsonlint:full',
         'jshint:full',
         'jslint:full',
         'eslint:full',
         'jscs:full',
-        'todos:full',
-        'jsdoc2md:api',
-        'coverage'
+        'todos:full'
     ]);
 
-    grunt.registerTask('coverage', 'Run all module tests cases.', [
-        'clean:target',
-        'karma:full'
+    grunt.registerTask('coverage-prepare', 'Pre test tasks', [
+        'cleanup'
     ]);
 
-    grunt.registerTask('continuesIntegration', 'Run all module tests cases.', [
-        'jsonlint:full',
-        'jshint:full',
-        'jslint:full',
-        'eslint:full',
-        'jscs:full',
-        'todos:full',
-        'coverage',
+    grunt.registerTask('test', 'Continues integration related tasks.', [
+        'lint',
+        'coverage-ci'
+    ]);
+
+    grunt.registerTask('docs', 'Generate docs.', [
+        'jsdoc2md:api'
+    ]);
+
+    grunt.registerTask('coverage-ci', 'Test for continues integration.', [
+        'coverage-prepare',
+        'karma:full',
         'coveralls:full'
+    ]);
+
+    grunt.registerTask('build', 'Run all build steps.', [
+        'lint',
+        'docs',
+        'coverage-prepare',
+        'karma:full'
     ]);
 };

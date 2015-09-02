@@ -5,7 +5,7 @@
   "description": "AngularJS service for displaying web notifications.",
   "author": {
     "name": "Sagie Gur-Ari",
-    "email": "sgurari@yahoo.com"
+    "email": "sagiegurari@gmail.com"
   },
   "main": "angular-web-notification.js",
   "directories": {
@@ -44,8 +44,11 @@
     "time-grunt": "latest"
   },
   "scripts": {
-    "test": "grunt continuesIntegration",
-    "docs": "grunt jsdoc2md:api"
+    "test": "grunt test",
+    "clean": "grunt cleanup",
+    "lint": "grunt lint",
+    "docs": "grunt docs",
+    "build": "grunt build"
   },
   "license": "Apache-2.0",
   "bugs": {
