@@ -27,7 +27,7 @@ window.notify = (function () {
         var notification = {
             close: function mockClose() {
                 if (options.onClick) {
-                    this.webNotification.onClick();
+                    this.webNotification.onclick();
                 }
 
                 return undefined;
