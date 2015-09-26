@@ -77,7 +77,7 @@
 
             //add onclick handler
             if (options.onClick && notification && notification.webNotification) {
-                notification.webNotification.onClick = options.onClick;
+                notification.webNotification.onclick = options.onClick;
             }
 
             return function hideNotification() {
