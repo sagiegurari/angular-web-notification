@@ -60,6 +60,8 @@
          *
          * @param {string} title - The notification title text (defaulted to empty string if null is provided)
          * @param {object} options - Holds the notification data (web notification API spec for more info)
+         * @param {number} [options.autoClose] - Auto closes the notification after the provided amount of millies (0 or undefined for no auto close)
+         * @param {function} [options.onClick] - An optional onclick event handler
          * @returns {function} The hide notification function
          */
         var createAndDisplayNotification = function (title, options) {
@@ -72,6 +74,11 @@
             });
 
             var notification = notifyLib.createNotification(title, options);
+
+            //add onclick handler
+            if (options.onClick && notification && notification.webNotification) {
+                notification.webNotification.onClick = options.onClick;
+            }
 
             return function hideNotification() {
                 notification.close();
@@ -143,12 +150,17 @@
              * @param {string} [title] - The notification title text (defaulted to empty string if null is provided)
              * @param {object} [options] - Holds the notification data (web notification API spec for more info)
              * @param {number} [options.autoClose] - Auto closes the notification after the provided amount of millies (0 or undefined for no auto close)
+             * @param {function} [options.onClick] - An optional onclick event handler
              * @param {ShowNotificationCallback} callback - Called after the show is handled.
              * @example
              * ```js
              * webNotification.showNotification('Example Notification', {
              *    body: 'Notification Text...',
-             *    icon: 'my-icon.ico'
+             *    icon: 'my-icon.ico',
+             *    onClick: function onNotificationClicked() {
+             *      console.log('Notification clicked.');
+             *    },
+             *    autoClose: 4000 //auto close the notification after 2 seconds (you can manually close it via hide function)
              * }, function onShow(error, hide) {
              *    if (error) {
              *        window.alert('Unable to show notification: ' + error.message);

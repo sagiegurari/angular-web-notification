@@ -14,6 +14,9 @@ window.angular.module('exampleApp', [
                 webNotification.showNotification('Example Notification', {
                     body: 'Notification Text...',
                     icon: '../bower_components/HTML5-Desktop-Notifications/alert.ico',
+                    onClick: function onNotificationClicked() {
+                        console.log('Notification clicked.');
+                    },
                     autoClose: 4000 //auto close the notification after 2 seconds (you can manually close it via hide function)
                 }, function onShow(error, hide) {
                     if (error) {

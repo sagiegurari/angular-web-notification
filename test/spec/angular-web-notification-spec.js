@@ -13,7 +13,9 @@ describe('angular-web-notification', function () {
 
         hide();
 
-        done();
+        if (done) {
+            done();
+        }
     };
     var errorValidation = function (error, hide, done) {
         assert.isDefined(error);
@@ -140,6 +142,29 @@ describe('angular-web-notification', function () {
 
                     webNotification.showNotification('first time', {}, function onShow(error, hide) {
                         validShowValidation(error, hide, done);
+                    });
+                });
+            });
+
+            it('showNotification with onClick', function (done) {
+                inject(function (webNotification) {
+                    window.notify.setAllowed(function (title, options) {
+                        assert.equal(title, 'Example Notification');
+                        assert.isFunction(options.onClick);
+                    });
+
+                    webNotification.showNotification('Example Notification', {
+                        body: 'Notification Text...',
+                        icon: 'my-icon.ico',
+                        onClick: function () {
+                            done();
+                        }
+                    }, function onShow(error, hide) {
+                        assert.deepEqual(window.notify.getConfig(), {
+                            autoClose: 0
+                        });
+
+                        validShowValidation(error, hide);
                     });
                 });
             });

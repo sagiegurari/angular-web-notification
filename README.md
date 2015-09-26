@@ -43,6 +43,9 @@ return {
             webNotification.showNotification('Example Notification', {
                 body: 'Notification Text...',
                 icon: 'my-icon.ico',
+                onClick: function onNotificationClicked() {
+                    console.log('Notification clicked.');
+                },
                 autoClose: 4000 //auto close the notification after 2 seconds (you can manually close it via hide function)
             }, function onShow(error, hide) {
                 if (error) {
@@ -80,6 +83,7 @@ See full docs at: [API Docs](docs/api.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
+| 2015-09-26  | v0.0.30 | Added 'onClick' option to enable adding onclick event handler for the notification |
 | 2015-09-02  | v0.0.29 | Maintenance |
 | 2015-08-16  | v0.0.22 | uglify fix |
 | 2015-08-02  | v0.0.21 | Maintenance |

@@ -24,11 +24,18 @@ window.notify = (function () {
     lib.createNotification = function (title, options) {
         lib.validateNotification(title, options);
 
-        return {
+        var notification = {
             close: function mockClose() {
+                if (options.onClick) {
+                    this.webNotification.onClick();
+                }
+
                 return undefined;
-            }
+            },
+            webNotification: {}
         };
+
+        return notification;
     };
 
     lib.setValidationNotification = function (validateNotification) {

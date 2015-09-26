@@ -41,13 +41,18 @@ case of no errors) and a 'hide' function which can be used to hide the notificat
 | [title] | <code>string</code> | The notification title text (defaulted to empty string if null is provided) |
 | [options] | <code>object</code> | Holds the notification data (web notification API spec for more info) |
 | [options.autoClose] | <code>number</code> | Auto closes the notification after the provided amount of millies (0 or undefined for no auto close) |
+| [options.onClick] | <code>function</code> | An optional onclick event handler |
 | callback | <code>[ShowNotificationCallback](#ShowNotificationCallback)</code> | Called after the show is handled. |
 
 **Example**  
 ```js
 webNotification.showNotification('Example Notification', {
    body: 'Notification Text...',
-   icon: 'my-icon.ico'
+   icon: 'my-icon.ico',
+   onClick: function onNotificationClicked() {
+     console.log('Notification clicked.');
+   },
+   autoClose: 4000 //auto close the notification after 2 seconds (you can manually close it via hide function)
 }, function onShow(error, hide) {
    if (error) {
        window.alert('Unable to show notification: ' + error.message);
