@@ -1,6 +1,6 @@
 {
   "name": "angular-web-notification",
-  "version": "0.0.30",
+  "version": "0.0.31",
   "authors": [
     "Sagie Gur-Ari <sagiegurari@gmail.com>"
   ],
@@ -22,7 +22,7 @@
     "target"
   ],
   "dependencies": {
-    "HTML5-Desktop-Notifications": "https://github.com/sagiegurari/HTML5-Desktop-Notifications.git",
+    "HTML5-Desktop-Notifications2": "~1.0.1",
     "angular": "~1.3.5"
   },
   "devDependencies": {
