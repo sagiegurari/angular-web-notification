@@ -13,7 +13,7 @@ window.angular.module('exampleApp', [
             element.on('click', function onClick() {
                 webNotification.showNotification('Example Notification', {
                     body: 'Notification Text...',
-                    icon: '../bower_components/HTML5-Desktop-Notifications/alert.ico',
+                    icon: '../bower_components/HTML5-Desktop-Notifications2/alert.ico',
                     onClick: function onNotificationClicked() {
                         console.log('Notification clicked.');
                     },
