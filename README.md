@@ -1,10 +1,20 @@
 # angular-web-notification
 
-[![Bower Version](https://img.shields.io/bower/v/angular-web-notification.svg?style=flat)](https://github.com/sagiegurari/angular-web-notification/releases) [![Build Status](https://img.shields.io/travis/sagiegurari/angular-web-notification.svg?style=flat)](http://travis-ci.org/sagiegurari/angular-web-notification) [![Coverage Status](https://img.shields.io/coveralls/sagiegurari/angular-web-notification.svg?style=flat)](https://coveralls.io/r/sagiegurari/angular-web-notification) [![Code Climate](https://codeclimate.com/github/sagiegurari/angular-web-notification/badges/gpa.svg)](https://codeclimate.com/github/sagiegurari/angular-web-notification) [![bitHound Score](https://www.bithound.io/sagiegurari/angular-web-notification/badges/score.svg)](https://www.bithound.io/sagiegurari/angular-web-notification) [![Inline docs](http://inch-ci.org/github/sagiegurari/angular-web-notification.svg?branch=master)](http://inch-ci.org/github/sagiegurari/angular-web-notification)<br>
+[![Bower Version](https://img.shields.io/bower/v/angular-web-notification.svg?style=flat)](https://github.com/sagiegurari/angular-web-notification/releases) [![Build Status](https://travis-ci.org/sagiegurari/angular-web-notification.svg)](http://travis-ci.org/sagiegurari/angular-web-notification) [![Coverage Status](https://coveralls.io/repos/sagiegurari/angular-web-notification/badge.svg)](https://coveralls.io/r/sagiegurari/angular-web-notification) [![Code Climate](https://codeclimate.com/github/sagiegurari/angular-web-notification/badges/gpa.svg)](https://codeclimate.com/github/sagiegurari/angular-web-notification) [![bitHound Score](https://www.bithound.io/sagiegurari/angular-web-notification/badges/score.svg)](https://www.bithound.io/sagiegurari/angular-web-notification) [![Inline docs](http://inch-ci.org/github/sagiegurari/angular-web-notification.svg?branch=master)](http://inch-ci.org/github/sagiegurari/angular-web-notification)<br>
 [![License](https://img.shields.io/github/license/sagiegurari/angular-web-notification.svg)](https://github.com/sagiegurari/angular-web-notification/blob/master/LICENSE) [![Retire Status](http://retire.insecurity.today/api/image?uri=https://raw.githubusercontent.com/sagiegurari/angular-web-notification/master/bower.json)](http://retire.insecurity.today/api/image?uri=https://raw.githubusercontent.com/sagiegurari/angular-web-notification/master/bower.json)
 
 > Web Notifications AngularJS Service
 
+* [Overview](#overview)
+* [Demo](http://plnkr.co/edit/SUTiBu?p=preview)
+* [Usage](#usage)
+* [Installation](#installation)
+* [Limitations](#limitations)
+* [API Documentation](docs/api.md)
+* [Release History](#history)
+* [License](#license)
+
+<a name="overview"></a>
 ## Overview
 The angular-web-notification is an angular service wrapper for the web notifications API.
 
@@ -15,6 +25,7 @@ See [W3 Specification](https://dvcs.w3.org/hg/notifications/raw-file/tip/Overvie
 ## Demo
 [Live Demo at Plunker](http://plnkr.co/edit/SUTiBu?p=preview)
 
+<a name="usage"></a>
 ## Usage
 In order to use the angular service you first must add the relevant dependencies:
 
@@ -65,12 +76,14 @@ return {
 }]);
 ```
 
+<a name="installation"></a>
 ## Installation
 Run bower install in your project as follows:
 ```
 bower install angular-web-notification --save
 ```
 
+<a name="limitations"></a>
 ## Limitations
 The web notifications API is not fully supported in all browsers.
 
@@ -79,11 +92,12 @@ Please see http://caniuse.com/#feat=notifications for more information on the of
 ## API Documentation
 See full docs at: [API Docs](docs/api.md)
 
+<a name="history"></a>
 ## Release History
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2015-09-26  | v0.0.33 | Maintenance |
+| 2015-10-06  | v0.0.34 | Maintenance |
 | 2015-09-26  | v0.0.31 | Update bower dependencies |
 | 2015-09-26  | v0.0.30 | Added 'onClick' option to enable adding onclick event handler for the notification |
 | 2015-09-02  | v0.0.29 | Maintenance |
@@ -95,5 +109,6 @@ See full docs at: [API Docs](docs/api.md)
 | 2014-12-09  | v0.0.3  | API now enables/disables the<br>capability to automatically request for<br>permissions needed to display the notification. |
 | 2014-12-08  | v0.0.2  | Initial release |
 
+<a name="license"></a>
 ## License
 Developed by Sagie Gur-Ari and licensed under the Apache 2 open source license.
