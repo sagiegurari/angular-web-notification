@@ -41,6 +41,7 @@
         }
       }
     ],
+    "require-jsdoc": 2,
     "quote-props": [
       2,
       "as-needed"
