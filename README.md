@@ -1,7 +1,7 @@
 # angular-web-notification
 
 [![Bower Version](https://img.shields.io/bower/v/angular-web-notification.svg?style=flat)](https://github.com/sagiegurari/angular-web-notification/releases) [![Build Status](https://travis-ci.org/sagiegurari/angular-web-notification.svg)](http://travis-ci.org/sagiegurari/angular-web-notification) [![Coverage Status](https://coveralls.io/repos/sagiegurari/angular-web-notification/badge.svg)](https://coveralls.io/r/sagiegurari/angular-web-notification) [![Code Climate](https://codeclimate.com/github/sagiegurari/angular-web-notification/badges/gpa.svg)](https://codeclimate.com/github/sagiegurari/angular-web-notification) [![bitHound Score](https://www.bithound.io/sagiegurari/angular-web-notification/badges/score.svg)](https://www.bithound.io/sagiegurari/angular-web-notification) [![Inline docs](http://inch-ci.org/github/sagiegurari/angular-web-notification.svg?branch=master)](http://inch-ci.org/github/sagiegurari/angular-web-notification)<br>
-[![License](https://img.shields.io/github/license/sagiegurari/angular-web-notification.svg)](https://github.com/sagiegurari/angular-web-notification/blob/master/LICENSE) [![Retire Status](http://retire.insecurity.today/api/image?uri=https://raw.githubusercontent.com/sagiegurari/angular-web-notification/master/bower.json)](http://retire.insecurity.today/api/image?uri=https://raw.githubusercontent.com/sagiegurari/angular-web-notification/master/bower.json)
+[![License](https://img.shields.io/bower/l/angular-web-notification.svg)](https://github.com/sagiegurari/angular-web-notification/blob/master/LICENSE) [![Retire Status](http://retire.insecurity.today/api/image?uri=https://raw.githubusercontent.com/sagiegurari/angular-web-notification/master/bower.json)](http://retire.insecurity.today/api/image?uri=https://raw.githubusercontent.com/sagiegurari/angular-web-notification/master/bower.json)
 
 > Web Notifications AngularJS Service
 
@@ -97,7 +97,7 @@ See full docs at: [API Docs](docs/api.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2015-10-16  | v0.0.35 | Maintenance |
+| 2015-10-17  | v0.0.36 | Maintenance |
 | 2015-09-26  | v0.0.31 | Update bower dependencies |
 | 2015-09-26  | v0.0.30 | Added 'onClick' option to enable adding onclick event handler for the notification |
 | 2015-09-02  | v0.0.29 | Maintenance |
