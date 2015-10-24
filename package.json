@@ -34,6 +34,7 @@
     "grunt-jsonlint": "latest",
     "grunt-karma": "latest",
     "grunt-todos": "latest",
+    "husky": "latest",
     "karma": "latest",
     "karma-cli": "latest",
     "karma-coverage": "latest",
@@ -50,7 +51,8 @@
     "clean": "grunt cleanup",
     "lint": "grunt lint",
     "docs": "grunt docs",
-    "build": "grunt build"
+    "build": "grunt build",
+    "precommit": "npm run build"
   },
   "license": "Apache-2.0",
   "bugs": {
