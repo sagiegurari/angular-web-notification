@@ -1,18 +1,18 @@
 {
   "name": "angular-web-notification",
-  "version": "0.0.37",
+  "version": "0.0.38",
+  "description": "AngularJS service for displaying web notifications.",
   "authors": [
     "Sagie Gur-Ari <sagiegurari@gmail.com>"
   ],
-  "description": "AngularJS service for displaying web notifications.",
-  "main": "angular-web-notification.js",
+  "license": "Apache-2.0",
+  "homepage": "http://github.com/sagiegurari/angular-web-notification",
   "keywords": [
     "AngularJS",
     "notifications",
     "web notifications"
   ],
-  "license": "Apache-2.0",
-  "homepage": "http://github.com/sagiegurari/angular-web-notification",
+  "main": "angular-web-notification.js",
   "ignore": [
     "node_modules",
     "bower_components",

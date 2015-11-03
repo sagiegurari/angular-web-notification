@@ -97,7 +97,7 @@ See full docs at: [API Docs](docs/api.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2015-10-24  | v0.0.37 | Maintenance |
+| 2015-11-03  | v0.0.38 | Maintenance |
 | 2015-09-26  | v0.0.31 | Update bower dependencies |
 | 2015-09-26  | v0.0.30 | Added 'onClick' option to enable adding onclick event handler for the notification |
 | 2015-09-02  | v0.0.29 | Maintenance |

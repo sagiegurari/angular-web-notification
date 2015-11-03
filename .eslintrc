@@ -33,7 +33,7 @@
     "consistent-this": 0,
     "callback-return": 0,
     "valid-jsdoc": [
-      1,
+      2,
       {
         "requireReturn": false,
         "prefer": {

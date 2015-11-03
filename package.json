@@ -7,20 +7,33 @@
     "name": "Sagie Gur-Ari",
     "email": "sagiegurari@gmail.com"
   },
-  "main": "angular-web-notification.js",
-  "directories": {
-    "test": "test/spec",
-    "example": "example"
-  },
+  "license": "Apache-2.0",
+  "homepage": "http://github.com/sagiegurari/angular-web-notification",
   "repository": {
     "type": "git",
     "url": "http://github.com/sagiegurari/angular-web-notification.git"
+  },
+  "bugs": {
+    "url": "http://github.com/sagiegurari/angular-web-notification/issues"
   },
   "keywords": [
     "angularjs",
     "web",
     "notification"
   ],
+  "main": "angular-web-notification.js",
+  "directories": {
+    "test": "test/spec",
+    "example": "example"
+  },
+  "scripts": {
+    "test": "grunt test",
+    "clean": "grunt cleanup",
+    "lint": "grunt lint",
+    "docs": "grunt docs",
+    "build": "grunt build",
+    "precommit": "npm run build"
+  },
   "devDependencies": {
     "grunt": "latest",
     "grunt-cli": "latest",
@@ -45,18 +58,5 @@
     "mocha": "latest",
     "phantomjs": "latest",
     "time-grunt": "latest"
-  },
-  "scripts": {
-    "test": "grunt test",
-    "clean": "grunt cleanup",
-    "lint": "grunt lint",
-    "docs": "grunt docs",
-    "build": "grunt build",
-    "precommit": "npm run build"
-  },
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "http://github.com/sagiegurari/angular-web-notification/issues"
-  },
-  "homepage": "http://github.com/sagiegurari/angular-web-notification"
+  }
 }
