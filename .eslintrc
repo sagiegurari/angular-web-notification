@@ -2,11 +2,6 @@
   "env": {
     "browser": true
   },
-  "globals": {
-    "angular": true,
-    "notify": true,
-    "module": true
-  },
   "rules": {
     "block-scoped-var": 0,
     "no-extra-parens": 0,

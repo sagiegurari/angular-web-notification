@@ -1,0 +1,14 @@
+
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 2
+
+[*.{js,json,html,htm,css,scss,less,md,txt,properties,yml,go}]
+charset = utf-8
+
+[*.{js,go}]
+indent_size = 4
