@@ -18,7 +18,9 @@
   "disallowKeywordsOnNewLine": [
     "else"
   ],
-  "disallowKeywords": ["with"],
+  "disallowKeywords": [
+    "with"
+  ],
   "disallowMixedSpacesAndTabs": true,
   "disallowMultipleLineBreaks": true,
   "disallowMultipleLineStrings": true,
