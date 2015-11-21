@@ -137,7 +137,7 @@
              * @alias webNotification.allowRequest
              * @public
              */
-            allowRequest: true,//true to enable automatic requesting of permissions if needed
+            allowRequest: true, //true to enable automatic requesting of permissions if needed
             /**
              * Shows the notification based on the provided input.<br>
              * The callback invoked will get an error object (in case of an error, null in
