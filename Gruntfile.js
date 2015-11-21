@@ -55,11 +55,7 @@ module.exports = function (grunt) {
                     edition: 'latest',
                     failOnError: true
                 },
-                directives: {
-                    browser: true,
-                    vars: true,
-                    plusplus: true
-                }
+                directives: grunt.file.readJSON('.jslintrc')
             }
         },
 
