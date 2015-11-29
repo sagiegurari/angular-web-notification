@@ -9,3 +9,11 @@ ratings:
 exclude_paths:
   - test/**/*
   - example/**/*
+  - docs/**/*
+  - Gruntfile.js
+  - **/*.json
+  - **/*.md
+  - **/*.yml
+  - .editorconfig
+  - .jslintrc
+  - LICENSE
