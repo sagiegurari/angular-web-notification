@@ -1,0 +1,11 @@
+engines:
+  eslint:
+    enabled: true
+  fixme:
+    enabled: true
+ratings:
+  paths:
+    - angular-web-notification.js
+exclude_paths:
+  - test/**/*
+  - example/**/*
