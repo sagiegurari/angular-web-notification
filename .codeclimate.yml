@@ -18,11 +18,9 @@ exclude_paths:
   - .editorconfig
   - .codeclimate.yml
   - LICENSE
-  - *.json
-  - **.json
-  - *.md
-  - **.md
-  - *.yml
-  - **.yml
-  - *.*rc
-  - **.*rc
+  - README.md
+  - bower.json
+  - package.json
+  - .*.json
+  - .*.yml
+  - .*rc
