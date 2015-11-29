@@ -8,12 +8,21 @@ ratings:
     - angular-web-notification.js
 exclude_paths:
   - test/**/*
+  - test/*
   - example/**/*
+  - example/*
   - docs/**/*
+  - docs/*
   - Gruntfile.js
-  - **/*.json
-  - **/*.md
-  - **/*.yml
+  - karma.conf.js
   - .editorconfig
-  - .jslintrc
+  - .codeclimate.yml
   - LICENSE
+  - *.json
+  - **.json
+  - *.md
+  - **.md
+  - *.yml
+  - **.yml
+  - *.*rc
+  - **.*rc
