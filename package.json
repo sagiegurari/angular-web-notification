@@ -32,7 +32,7 @@
     "lint": "grunt lint",
     "docs": "grunt docs",
     "build": "grunt build",
-    "precommit": "npm run build"
+    "prepush": "npm run build"
   },
   "devDependencies": {
     "grunt": "latest",
