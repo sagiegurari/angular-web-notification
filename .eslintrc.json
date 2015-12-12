@@ -27,6 +27,7 @@
     "func-names": 0,
     "consistent-this": 0,
     "callback-return": 0,
+    "no-magic-numbers": 0,
     "valid-jsdoc": [
       2,
       {
@@ -48,6 +49,10 @@
       2,
       "never"
     ],
+    "arrow-body-style": [
+      2,
+      "always"
+    ],
     "arrow-parens": 2,
     "arrow-spacing": [
       2,
@@ -56,6 +61,7 @@
         "after": true
       }
     ],
+    "no-arrow-condition": 2,
     "id-length": [
       2,
       {
@@ -100,9 +106,11 @@
     "guard-for-in": 2,
     "no-alert": 2,
     "no-caller": 2,
+    "no-case-declarations": 2,
     "no-div-regex": 2,
     "no-else-return": 2,
     "no-empty-label": 2,
+    "no-empty-pattern": 2,
     "no-eq-null": 2,
     "no-eval": 2,
     "no-extend-native": 2,

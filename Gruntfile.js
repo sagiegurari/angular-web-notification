@@ -62,7 +62,7 @@ module.exports = function (grunt) {
         eslint: {
             full: {
                 options: {
-                    config: '.eslintrc'
+                    config: '.eslintrc.json'
                 },
                 src: [
                     'angular-web-notification.js'
