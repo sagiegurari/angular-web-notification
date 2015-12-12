@@ -25,6 +25,7 @@
   "disallowMultipleLineBreaks": true,
   "disallowMultipleLineStrings": true,
   "disallowMultipleSpaces": true,
+  "disallowNestedTernaries": true,
   "disallowNewlineBeforeBlockStatements": true,
   "disallowPaddingNewlinesBeforeKeywords": [
     "else",
@@ -37,10 +38,12 @@
   "disallowSpaceBeforeBinaryOperators": [
     ","
   ],
+  "disallowSpaceBeforeComma": true,
   "disallowSpaceBeforePostfixUnaryOperators": [
     "++",
     "--"
   ],
+  "disallowSpaceBeforeSemicolon": true,
   "disallowSpacesInCallExpression": true,
   "disallowSpacesInFunctionDeclaration": {
     "beforeOpeningRoundBrace": true
@@ -50,9 +53,25 @@
   },
   "disallowSpacesInsideObjectBrackets": "all",
   "disallowSpacesInsideParentheses": true,
+  "disallowSpacesInsideParenthesizedExpression": true,
+  "disallowTabs": true,
   "disallowTrailingComma": true,
   "disallowTrailingWhitespace": true,
+  "disallowUnusedParams": true,
   "disallowYodaConditions": true,
+  "jsDoc": {
+    "checkParamExistence": true,
+    "checkParamNames": true,
+    "requireParamTypes": true,
+    "checkReturnTypes": true,
+    "checkRedundantReturns": true,
+    "requireReturnTypes": true,
+    "checkTypes": true,
+    "requireHyphenBeforeDescription": true,
+    "requireNewlineAfterDescription": true,
+    "requireParamDescription": true,
+    "requireReturnDescription": true
+  },
   "maximumLineLength": 400,
   "requireBlocksOnNewline": true,
   "requireCamelCaseOrUpperCaseIdentifiers": true,
@@ -68,7 +87,6 @@
     "catch"
   ],
   "requireDollarBeforejQueryAssignment": true,
-  "requireDollarBeforejQueryAssignment": true,
   "requireKeywordsOnNewLine": [
     "switch",
     "do",
@@ -77,6 +95,8 @@
   ],
   "requireLineBreakAfterVariableAssignment": true,
   "requireLineFeedAtFileEnd": true,
+  "requireNamedUnassignedFunctions": true,
+  "requireObjectKeysOnNewLine": true,
   "requireOperatorBeforeLineBreak": [
     "?",
     "=",
@@ -93,7 +113,10 @@
     "<",
     "<="
   ],
+  "requirePaddingNewLinesAfterUseStrict": true,
+  "requirePaddingNewLinesBeforeExport": true,
   "requirePaddingNewLinesInObjects": true,
+  "requireParenthesesAroundArrowParam": true,
   "requireParenthesesAroundIIFE": true,
   "requireSemicolons": true,
   "requireSpaceAfterBinaryOperators": [
@@ -108,6 +131,7 @@
     "!=",
     "!=="
   ],
+  "requireSpaceAfterComma": true,
   "requireSpaceAfterKeywords": [
     "do",
     "for",
@@ -159,6 +183,10 @@
   "requireSpacesInFunction": {
     "beforeOpeningCurlyBrace": true
   },
+  "requireSpacesInGenerator": {
+    "beforeStar": true,
+    "afterStar": true
+  },
   "requireSpacesInNamedFunctionExpression": {
     "beforeOpeningCurlyBrace": true
   },
@@ -167,6 +195,9 @@
   ],
   "validateIndentation": 4,
   "validateLineBreaks": "LF",
+  "validateNewlineAfterArrayElements": {
+    "maximum": 5
+  },
   "validateParameterSeparator": ", ",
   "validateQuoteMarks": "'"
 }

@@ -6,7 +6,19 @@
  * @param {function} [hide] - The hide notification function
  */
 
-(function (notifyLib) {
+/**
+ * @ngdoc method
+ * @function
+ * @memberof! webNotification
+ * @alias webNotification.initWebNotification
+ * @private
+ *
+ * @description
+ * Initializes the angular web notification service.
+ *
+ * @param {object} notifyLib - The HTML5 notification library instance
+ */
+(function initWebNotification(notifyLib) {
     'use strict';
 
     var webNotification = window.angular.module('angular-web-notification', []);
