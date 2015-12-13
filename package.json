@@ -32,7 +32,8 @@
     "lint": "grunt lint",
     "docs": "grunt docs",
     "build": "grunt build",
-    "prepush": "npm run build"
+    "prepush": "npm run build",
+    "synclibs": "npm install && npm update"
   },
   "devDependencies": {
     "grunt": "latest",

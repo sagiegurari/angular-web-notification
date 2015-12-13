@@ -3,12 +3,6 @@ engines:
     enabled: true
   fixme:
     enabled: true
-  duplication:
-    enabled: true
-    config:
-      languages:
-        javascript:
-          mass_threshold: 200
 ratings:
   paths:
     - angular-web-notification.js

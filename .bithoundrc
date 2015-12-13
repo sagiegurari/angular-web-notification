@@ -1,0 +1,6 @@
+{
+  "ignore": [
+    "test/**/*.js",
+    "build/**/*.js"
+  ]
+}
