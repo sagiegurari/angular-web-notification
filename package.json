@@ -54,6 +54,7 @@
     "karma-mocha": "latest",
     "karma-phantomjs-launcher": "latest",
     "karma-sinon-chai": "latest",
+    "load-grunt-configs": "latest",
     "load-grunt-tasks": "latest",
     "mocha": "latest",
     "phantomjs": "latest",

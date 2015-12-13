@@ -8,13 +8,15 @@ engines:
     config:
       languages:
         javascript:
-          mass_threshold: 100
+          mass_threshold: 200
 ratings:
   paths:
     - angular-web-notification.js
 exclude_paths:
   - test/**/*
   - test/*
+  - build/**/*
+  - build/*
   - example/**/*
   - example/*
   - docs/**/*

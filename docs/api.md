@@ -1,15 +1,19 @@
 ## Objects
+
 <dl>
 <dt><a href="#webNotification">webNotification</a> ⇒ <code>object</code></dt>
 <dd><p>The web notification service wraps the HTML 5 Web Notifications API as an angular service.</p>
 </dd>
 </dl>
+
 ## Typedefs
+
 <dl>
 <dt><a href="#ShowNotificationCallback">ShowNotificationCallback</a> : <code>function</code></dt>
 <dd><p>&#39;showNotification&#39; callback.</p>
 </dd>
 </dl>
+
 <a name="webNotification"></a>
 ## webNotification ⇒ <code>object</code>
 The web notification service wraps the HTML 5 Web Notifications API as an angular service.
@@ -20,8 +24,8 @@ The web notification service wraps the HTML 5 Web Notifications API as an angula
 **Author:** Sagie Gur-Ari  
 
 * [webNotification](#webNotification) ⇒ <code>object</code>
-  * [.allowRequest](#webNotification.allowRequest)
-  * [.showNotification([title], [options], callback)](#webNotification.showNotification)
+    * [.allowRequest](#webNotification.allowRequest)
+    * [.showNotification([title], [options], callback)](#webNotification.showNotification)
 
 <a name="webNotification.allowRequest"></a>
 ### webNotification.allowRequest
