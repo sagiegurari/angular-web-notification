@@ -20,5 +20,6 @@
   "strict": true,
   "undef": true,
   "unused": true,
+  "varstmt": false,
   "browser": true
 }
