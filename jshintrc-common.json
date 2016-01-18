@@ -1,0 +1,23 @@
+{
+  "bitwise": true,
+  "curly": true,
+  "eqeqeq": true,
+  "forin": true,
+  "freeze": true,
+  "futurehostile": true,
+  "latedef": true,
+  "maxcomplexity": 10,
+  "maxdepth": 5,
+  "maxerr": 100,
+  "maxparams": 5,
+  "maxstatements": 50,
+  "noarg": true,
+  "nocomma": false,
+  "nonbsp": true,
+  "nonew": true,
+  "singleGroups": false,
+  "strict": true,
+  "undef": true,
+  "unused": true,
+  "varstmt": false
+}

@@ -23,6 +23,8 @@ exclude_paths:
   - README.md
   - bower.json
   - package.json
+  - eslintrc-common.json
+  - jshintrc-common.json
   - .*.json
   - .*.yml
   - .*rc

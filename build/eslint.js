@@ -4,7 +4,7 @@ module.exports.tasks = {
     eslint: {
         full: {
             options: {
-                config: '.eslintrc.json'
+                config: '.eslintrc.js'
             },
             src: [
                 'angular-web-notification.js'
