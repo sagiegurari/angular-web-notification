@@ -1,6 +1,7 @@
 {
   "ignore": [
     "test/**/*.js",
-    "build/**/*.js"
+    "project/**/*.js",
+    "example/**/*.js"
   ]
 }

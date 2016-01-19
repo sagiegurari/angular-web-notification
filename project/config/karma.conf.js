@@ -4,7 +4,7 @@ module.exports = function (config) {
     'use strict';
 
     config.set({
-        basePath: '.',
+        basePath: '../../',
         frameworks: ['mocha', 'sinon-chai'],
         files: [
             'bower_components/jquery/dist/jquery.js',

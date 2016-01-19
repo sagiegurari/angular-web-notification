@@ -12,7 +12,7 @@ module.exports = function (grunt) {
             buildDirectory: 'build'
         },
         config: {
-            src: 'build/*.js'
+            src: 'project/build/*.js'
         }
     };
 

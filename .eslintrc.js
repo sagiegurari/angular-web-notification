@@ -1,6 +1,6 @@
 'use strict';
 
-var config = require('./eslintrc-common.json');
+var config = require('./project/config/eslintrc-common.json');
 config.env = {
     browser: true
 };

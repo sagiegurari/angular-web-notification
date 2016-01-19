@@ -3,7 +3,7 @@
 module.exports.tasks = {
     karma: {
         full: {
-            configFile: 'karma.conf.js',
+            configFile: './project/config/karma.conf.js',
             singleRun: true,
             browsers: ['PhantomJS']
         }
