@@ -1,4 +1,12 @@
 {
+  "critics": {
+    "lint": {
+      "engine": "eslint"
+    },
+    "wc": {
+      "limit": 100000
+    }
+  },
   "ignore": [
     "test/**/*.js",
     "project/**/*.js",
