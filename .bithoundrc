@@ -8,8 +8,13 @@
     }
   },
   "ignore": [
+    "Gruntfile.js",
     "test/**/*.js",
     "project/**/*.js",
     "example/**/*.js"
+  ],
+  "test": [
+    "**/test/**",
+    "**/spec/**"
   ]
 }
