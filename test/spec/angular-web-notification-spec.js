@@ -93,6 +93,28 @@ describe('angular-web-notification', function () {
                 });
             });
 
+            it('showNotification no input test', function () {
+                inject(function (webNotification) {
+                    window.notify.setAllowed(emptyValuesValidation);
+
+                    webNotification.showNotification();
+                });
+            });
+
+            it('showNotification too many args test', function (done) {
+                inject(function (webNotification) {
+                    window.notify.setAllowed(emptyValuesValidation);
+
+                    webNotification.showNotification(1, 2, 3, 4, function () {
+                        assert.fail();
+                    });
+
+                    setTimeout(function () {
+                        done();
+                    }, 50);
+                });
+            });
+
             it('showNotification null info test', function (done) {
                 inject(function (webNotification) {
                     window.notify.setAllowed(emptyValuesValidation);

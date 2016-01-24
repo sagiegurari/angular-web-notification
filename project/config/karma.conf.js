@@ -5,7 +5,10 @@ module.exports = function (config) {
 
     config.set({
         basePath: '../../',
-        frameworks: ['mocha', 'sinon-chai'],
+        frameworks: [
+            'mocha',
+            'sinon-chai'
+        ],
         files: [
             'bower_components/jquery/dist/jquery.js',
             'bower_components/angular/angular.js',
@@ -17,11 +20,18 @@ module.exports = function (config) {
         port: 8080,
         logLevel: config.LOG_INFO,
         autoWatch: false,
-        browsers: ['PhantomJS'],
+        browsers: [
+            'PhantomJS'
+        ],
         singleRun: false,
-        reporters: ['progress', 'coverage'],
+        reporters: [
+            'progress',
+            'coverage'
+        ],
         preprocessors: {
-            'angular-web-notification.js': ['coverage']
+            'angular-web-notification.js': [
+                'coverage'
+            ]
         },
         coverageReporter: {
             dir: 'target/coverage/report',
@@ -30,7 +40,15 @@ module.exports = function (config) {
                     type: 'lcov',
                     subdir: '.'
                 }
-            ]
+            ],
+            check: {
+                global: {
+                    statements: 100,
+                    functions: 100,
+                    lines: 100,
+                    branches: 100
+                }
+            }
         }
     });
 };
