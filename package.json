@@ -58,7 +58,7 @@
     "load-grunt-configs": "latest",
     "load-grunt-tasks": "latest",
     "mocha": "latest",
-    "phantomjs": "latest",
+    "phantomjs-prebuilt": "latest",
     "time-grunt": "latest"
   }
 }
