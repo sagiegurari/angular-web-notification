@@ -101,7 +101,7 @@ See [contributing guide](docs/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2016-01-29  | v0.0.59 | Maintenance |
+| 2016-02-02  | v0.0.60 | Maintenance |
 | 2015-09-26  | v0.0.31 | Update bower dependencies |
 | 2015-09-26  | v0.0.30 | Added 'onClick' option to enable adding onclick event handler for the notification |
 | 2015-09-02  | v0.0.29 | Maintenance |
