@@ -8,5 +8,6 @@ config.rules.strict = [
     2,
     'function'
 ];
+config.rules['no-implicit-globals'] = 2;
 
 module.exports = config;
