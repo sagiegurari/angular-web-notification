@@ -36,6 +36,7 @@
     "synclibs": "npm install && npm update"
   },
   "devDependencies": {
+    "chai": "latest",
     "grunt": "latest",
     "grunt-cli": "latest",
     "grunt-contrib-clean": "latest",
@@ -57,8 +58,11 @@
     "karma-sinon-chai": "latest",
     "load-grunt-configs": "latest",
     "load-grunt-tasks": "latest",
+    "lolex": "latest",
     "mocha": "latest",
     "phantomjs-prebuilt": "latest",
+    "sinon": "latest",
+    "sinon-chai": "latest",
     "time-grunt": "latest"
   }
 }
