@@ -11,7 +11,7 @@
 * [Installation](#installation)
 * [Limitations](#limitations)
 * [API Documentation](docs/api.md)
-* [Contributing](docs/CONTRIBUTING.md)
+* [Contributing](.github/CONTRIBUTING.md)
 * [Release History](#history)
 * [License](#license)
 
@@ -94,14 +94,14 @@ Please see http://caniuse.com/#feat=notifications for more information on the of
 See full docs at: [API Docs](docs/api.md)
 
 ## Contributing
-See [contributing guide](docs/CONTRIBUTING.md)
+See [contributing guide](.github/CONTRIBUTING.md)
 
 <a name="history"></a>
 ## Release History
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2016-02-21  | v0.0.63 | Maintenance |
+| 2016-02-24  | v0.0.64 | Maintenance |
 | 2015-09-26  | v0.0.31 | Update bower dependencies |
 | 2015-09-26  | v0.0.30 | Added 'onClick' option to enable adding onclick event handler for the notification |
 | 2015-09-02  | v0.0.29 | Maintenance |
