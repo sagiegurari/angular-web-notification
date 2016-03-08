@@ -46,7 +46,15 @@
         service.allowRequest = true; //true to enable automatic requesting of permissions if needed
 
         Object.defineProperty(service, 'permissionGranted', {
-            get: function () {
+            /**
+             * Returns the permission granted value.
+             *
+             * @function
+             * @memberof! webNotification
+             * @private
+             * @returns {boolean} True if permission is granted, else false
+             */
+            get: function getPermission() {
                 var permission = notifyLib.permissionLevel();
 
                 /**
