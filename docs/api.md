@@ -25,11 +25,17 @@ The web notification service wraps the HTML 5 Web Notifications API as an angula
 
 * [webNotification](#webNotification) ⇒ <code>object</code>
     * [.allowRequest](#webNotification.allowRequest)
+    * [.permissionGranted](#webNotification.permissionGranted)
     * [.showNotification([title], [options], callback)](#webNotification.showNotification)
 
 <a name="webNotification.allowRequest"></a>
 ### webNotification.allowRequest
 True to enable automatic requesting of permissions if needed.
+
+**Access:** public  
+<a name="webNotification.permissionGranted"></a>
+### webNotification.permissionGranted
+True if permission is granted, else false.
 
 **Access:** public  
 <a name="webNotification.showNotification"></a>

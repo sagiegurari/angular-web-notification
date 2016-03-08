@@ -58,7 +58,7 @@ return {
                 onClick: function onNotificationClicked() {
                     console.log('Notification clicked.');
                 },
-                autoClose: 4000 //auto close the notification after 2 seconds (you can manually close it via hide function)
+                autoClose: 4000 //auto close the notification after 4 seconds (you can manually close it via hide function)
             }, function onShow(error, hide) {
                 if (error) {
                     window.alert('Unable to show notification: ' + error.message);
@@ -101,6 +101,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
+| 2016-03-08  | v0.0.65 | Added webNotification.permissionGranted attribute |
 | 2016-02-24  | v0.0.64 | Maintenance |
 | 2015-09-26  | v0.0.31 | Update bower dependencies |
 | 2015-09-26  | v0.0.30 | Added 'onClick' option to enable adding onclick event handler for the notification |
