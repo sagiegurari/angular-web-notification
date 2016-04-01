@@ -54,6 +54,7 @@
   "disallowSpacesInsideObjectBrackets": "all",
   "disallowSpacesInsideParentheses": true,
   "disallowSpacesInsideParenthesizedExpression": true,
+  "disallowSpacesInsideTemplateStringPlaceholders": true,
   "disallowTabs": true,
   "disallowTrailingComma": true,
   "disallowTrailingWhitespace": true,
@@ -160,6 +161,7 @@
     "!=="
   ],
   "requireSpaceBeforeBlockStatements": true,
+  "requireSpaceBeforeDestructuredValues": true,
   "requireSpaceBeforeKeywords": [],
   "requireSpaceBeforeObjectValues": true,
   "requireSpaceBetweenArguments": true,

@@ -15,6 +15,7 @@
 </dl>
 
 <a name="webNotification"></a>
+
 ## webNotification ⇒ <code>object</code>
 The web notification service wraps the HTML 5 Web Notifications API as an angular service.
 
@@ -29,16 +30,19 @@ The web notification service wraps the HTML 5 Web Notifications API as an angula
     * [.showNotification([title], [options], callback)](#webNotification.showNotification)
 
 <a name="webNotification.allowRequest"></a>
+
 ### webNotification.allowRequest
 True to enable automatic requesting of permissions if needed.
 
 **Access:** public  
 <a name="webNotification.permissionGranted"></a>
+
 ### webNotification.permissionGranted
 True if permission is granted, else false.
 
 **Access:** public  
 <a name="webNotification.showNotification"></a>
+
 ### webNotification.showNotification([title], [options], callback)
 Shows the notification based on the provided input.<br>
 The callback invoked will get an error object (in case of an error, null in
@@ -74,6 +78,7 @@ webNotification.showNotification('Example Notification', {
 });
 ```
 <a name="ShowNotificationCallback"></a>
+
 ## ShowNotificationCallback : <code>function</code>
 'showNotification' callback.
 
