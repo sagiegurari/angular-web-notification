@@ -6,8 +6,7 @@ module.exports = function (grunt) {
         'jshint:full',
         'jslint:full',
         'eslint:full',
-        'jscs:full',
-        'todos:full'
+        'jscs:full'
     ]);
 
     return {};

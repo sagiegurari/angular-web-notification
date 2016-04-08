@@ -48,7 +48,6 @@
     "grunt-jslint": "latest",
     "grunt-jsonlint": "latest",
     "grunt-karma": "latest",
-    "grunt-todos": "latest",
     "husky": "latest",
     "karma": "latest",
     "karma-cli": "latest",
