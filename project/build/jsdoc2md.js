@@ -7,7 +7,7 @@ module.exports.tasks = {
                 index: true,
                 private: false
             },
-            src: 'angular-web-notification.js',
+            src: require('../config/web-config.json').mainJSFile,
             dest: 'docs/api.md'
         }
     }

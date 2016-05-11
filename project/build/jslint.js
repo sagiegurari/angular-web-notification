@@ -6,7 +6,7 @@ module.exports = function (grunt) {
             jslint: {
                 full: {
                     src: [
-                        'angular-web-notification.js'
+                        require('../config/web-config.json').mainJSFile
                     ],
                     options: {
                         edition: 'latest',

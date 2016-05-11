@@ -8,7 +8,7 @@ module.exports.tasks = {
             },
             files: {
                 src: [
-                    'angular-web-notification.js',
+                    require('../config/web-config.json').mainJSFile,
                     'Gruntfile.js',
                     '<%=BuildConfig.buildDirectory%>/**/*.js'
                 ]
