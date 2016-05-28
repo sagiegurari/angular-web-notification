@@ -80,7 +80,8 @@ return {
 <a name="installation"></a>
 ## Installation
 Run bower install in your project as follows:
-```
+
+```sh
 bower install angular-web-notification --save
 ```
 
@@ -88,7 +89,7 @@ bower install angular-web-notification --save
 ## Limitations
 The web notifications API is not fully supported in all browsers.
 
-Please see http://caniuse.com/#feat=notifications for more information on the official spec support and at [HTML5-Desktop-Notifications](https://github.com/ttsvetko/HTML5-Desktop-Notifications) for more browser specific API support.
+Please see [supported browser versions](http://caniuse.com/#feat=notifications) for more information on the official spec support and at [HTML5-Desktop-Notifications](https://github.com/ttsvetko/HTML5-Desktop-Notifications) for more browser specific API support.
 
 ## API Documentation
 See full docs at: [API Docs](docs/api.md)
@@ -101,7 +102,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2016-05-27  | v0.0.71 | Maintenance |
+| 2016-05-28  | v0.0.72 | Maintenance |
 | 2016-03-08  | v0.0.65 | Added webNotification.permissionGranted attribute |
 | 2016-02-24  | v0.0.64 | Maintenance |
 | 2015-09-26  | v0.0.31 | Update bower dependencies |

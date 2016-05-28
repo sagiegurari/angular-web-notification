@@ -58,6 +58,7 @@
     "load-grunt-configs": "latest",
     "load-grunt-tasks": "latest",
     "lolex": "latest",
+    "markdownlint": "latest",
     "mocha": "latest",
     "phantomjs-prebuilt": "latest",
     "sinon": "latest",
