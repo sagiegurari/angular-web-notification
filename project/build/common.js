@@ -14,5 +14,7 @@ module.exports = function (grunt) {
         'jsdoc2md:api'
     ]);
 
+    grunt.registerTask('empty', 'Empty Task', []);
+
     return {};
 };
