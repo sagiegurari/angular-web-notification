@@ -8,7 +8,7 @@ module.exports.tasks = {
             },
             files: {
                 src: [
-                    require('../config/web-config.json').mainJSFile,
+                    require('../../bower.json').main,
                     'Gruntfile.js',
                     '<%=BuildConfig.buildDirectory%>/**/*.js'
                 ]

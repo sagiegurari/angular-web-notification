@@ -5,7 +5,7 @@ module.exports.tasks = {
         full: {
             files: {
                 src: [
-                    require('../config/web-config.json').mainJSFile
+                    require('../../bower.json').main
                 ]
             }
         },

@@ -3,7 +3,7 @@
 module.exports = function (config) {
     'use strict';
 
-    var mainJSFile = require('./web-config.json').mainJSFile;
+    var mainJSFile = require('../../bower.json').main;
 
     var karmaConfig = {
         basePath: '../../',

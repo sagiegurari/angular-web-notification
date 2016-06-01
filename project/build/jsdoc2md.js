@@ -7,7 +7,7 @@ module.exports.tasks = {
                 index: true,
                 private: false
             },
-            src: require('../config/web-config.json').mainJSFile,
+            src: require('../../bower.json').main,
             dest: 'docs/api.md'
         }
     }

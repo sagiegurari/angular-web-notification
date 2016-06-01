@@ -7,7 +7,7 @@ module.exports.tasks = {
                 config: '.eslintrc.js'
             },
             src: [
-                require('../config/web-config.json').mainJSFile
+                require('../../bower.json').main
             ]
         }
     }

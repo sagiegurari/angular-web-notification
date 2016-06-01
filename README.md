@@ -102,7 +102,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2016-05-31  | v0.0.73 | Maintenance |
+| 2016-06-01  | v0.0.74 | Maintenance |
 | 2016-03-08  | v0.0.65 | Added webNotification.permissionGranted attribute |
 | 2016-02-24  | v0.0.64 | Maintenance |
 | 2015-09-26  | v0.0.31 | Update bower dependencies |
