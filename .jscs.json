@@ -51,6 +51,7 @@
   "disallowSpacesInNamedFunctionExpression": {
     "beforeOpeningRoundBrace": true
   },
+  "disallowSpacesInsideImportedObjectBraces": true,
   "disallowSpacesInsideObjectBrackets": "all",
   "disallowSpacesInsideParentheses": true,
   "disallowSpacesInsideParenthesizedExpression": true,
@@ -59,6 +60,7 @@
   "disallowTrailingComma": true,
   "disallowTrailingWhitespace": true,
   "disallowUnusedParams": true,
+  "disallowUnusedVariables": true,
   "disallowYodaConditions": true,
   "jsDoc": {
     "checkParamExistence": true,
@@ -198,7 +200,6 @@
   "safeContextKeyword": [
     "self"
   ],
-  "validateIndentation": 4,
   "validateLineBreaks": "LF",
   "validateNewlineAfterArrayElements": {
     "maximum": 5
