@@ -85,6 +85,12 @@ Run bower install in your project as follows:
 bower install angular-web-notification --save
 ```
 
+Or if you are using NPM to download client libraries, you can install it as follows:
+
+```sh
+npm install --save angular-web-notification
+```
+
 <a name="limitations"></a>
 ## Limitations
 The web notifications API is not fully supported in all browsers.
@@ -102,6 +108,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
+| 2016-06-14  | v0.0.79 | Maintenance |
 | 2016-06-14  | v0.0.78 | Published via NPM (in addition to bower) |
 | 2016-06-14  | v0.0.77 | Maintenance |
 | 2016-03-08  | v0.0.65 | Added webNotification.permissionGranted attribute |
