@@ -2,7 +2,9 @@
 
 module.exports = function (grunt) {
     require('time-grunt')(grunt);
-    require('load-grunt-tasks')(grunt);
+    require('jit-grunt')(grunt, {
+        jsdoc2md: 'grunt-jsdoc-to-markdown'
+    });
 
     var options = {
         BuildConfig: {

@@ -2,13 +2,23 @@
 
 module.exports = function (grunt) {
     grunt.registerTask('lint', 'Linting tasks.', [
-        'markdownlint:full',
-        'jsonlint:full',
-        'jshint:full',
-        'jslint:full',
-        'eslint:full',
-        'jscs:full'
+        'concurrent:lint'
     ]);
 
-    return {};
+    return {
+        tasks: {
+            concurrent: {
+                lint: {
+                    target: [
+                        'markdownlint:full',
+                        'jsonlint:full',
+                        'jshint:full',
+                        'jslint:full',
+                        'eslint:full',
+                        'jscs:full'
+                    ]
+                }
+            }
+        }
+    };
 };
