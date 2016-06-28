@@ -11,10 +11,25 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('docs', 'Generate docs.', [
-        'jsdoc2md:api'
+        'concurrent:docs'
     ]);
 
     grunt.registerTask('empty', 'Empty Task', []);
 
-    return {};
+    grunt.registerTask('lint', 'Linting tasks.', [
+        'concurrent:lint'
+    ]);
+
+    return {
+        tasks: {
+            concurrent: {
+                docs: {
+                    target: [
+                        'gitdown:readme',
+                        'jsdoc2md:api'
+                    ]
+                }
+            }
+        }
+    };
 };

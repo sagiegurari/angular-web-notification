@@ -1,7 +1,7 @@
-# angular-web-notification
+# {"gitdown": "gitinfo", "name": "name"}
 
-[![Bower Version](https://img.shields.io/bower/v/angular-web-notification.svg?style=flat)](https://github.com/sagiegurari/angular-web-notification/releases) [![NPM Version](http://img.shields.io/npm/v/angular-web-notification.svg?style=flat)](https://www.npmjs.org/package/angular-web-notification) [![Build Status](https://travis-ci.org/sagiegurari/angular-web-notification.svg)](http://travis-ci.org/sagiegurari/angular-web-notification) [![Coverage Status](https://coveralls.io/repos/sagiegurari/angular-web-notification/badge.svg)](https://coveralls.io/r/sagiegurari/angular-web-notification) [![Code Climate](https://codeclimate.com/github/sagiegurari/angular-web-notification/badges/gpa.svg)](https://codeclimate.com/github/sagiegurari/angular-web-notification) [![bitHound Code](https://www.bithound.io/github/sagiegurari/angular-web-notification/badges/code.svg)](https://www.bithound.io/github/sagiegurari/angular-web-notification) [![Inline docs](http://inch-ci.org/github/sagiegurari/angular-web-notification.svg?branch=master)](http://inch-ci.org/github/sagiegurari/angular-web-notification)<br>
-[![License](https://img.shields.io/bower/l/angular-web-notification.svg)](https://github.com/sagiegurari/angular-web-notification/blob/master/LICENSE) [![Retire Status](http://retire.insecurity.today/api/image?uri=https://raw.githubusercontent.com/sagiegurari/angular-web-notification/master/bower.json)](http://retire.insecurity.today/api/image?uri=https://raw.githubusercontent.com/sagiegurari/angular-web-notification/master/bower.json)
+[![Bower Version](https://img.shields.io/bower/v/{"gitdown": "gitinfo", "name": "name"}.svg?style=flat)](https://github.com/{"gitdown": "gitinfo", "name": "username"}/{"gitdown": "gitinfo", "name": "name"}/releases) [![NPM Version](http://img.shields.io/npm/v/{"gitdown": "gitinfo", "name": "name"}.svg?style=flat)](https://www.npmjs.org/package/{"gitdown": "gitinfo", "name": "name"}) [![Build Status](https://travis-ci.org/{"gitdown": "gitinfo", "name": "username"}/{"gitdown": "gitinfo", "name": "name"}.svg)](http://travis-ci.org/{"gitdown": "gitinfo", "name": "username"}/{"gitdown": "gitinfo", "name": "name"}) [![Coverage Status](https://coveralls.io/repos/{"gitdown": "gitinfo", "name": "username"}/{"gitdown": "gitinfo", "name": "name"}/badge.svg)](https://coveralls.io/r/{"gitdown": "gitinfo", "name": "username"}/{"gitdown": "gitinfo", "name": "name"}) [![Code Climate](https://codeclimate.com/github/{"gitdown": "gitinfo", "name": "username"}/{"gitdown": "gitinfo", "name": "name"}/badges/gpa.svg)](https://codeclimate.com/github/{"gitdown": "gitinfo", "name": "username"}/{"gitdown": "gitinfo", "name": "name"}) [![bitHound Code](https://www.bithound.io/github/{"gitdown": "gitinfo", "name": "username"}/{"gitdown": "gitinfo", "name": "name"}/badges/code.svg)](https://www.bithound.io/github/{"gitdown": "gitinfo", "name": "username"}/{"gitdown": "gitinfo", "name": "name"}) [![Inline docs](http://inch-ci.org/github/{"gitdown": "gitinfo", "name": "username"}/{"gitdown": "gitinfo", "name": "name"}.svg?branch=master)](http://inch-ci.org/github/{"gitdown": "gitinfo", "name": "username"}/{"gitdown": "gitinfo", "name": "name"})<br>
+[![License](https://img.shields.io/bower/l/{"gitdown": "gitinfo", "name": "name"}.svg)](https://github.com/{"gitdown": "gitinfo", "name": "username"}/{"gitdown": "gitinfo", "name": "name"}/blob/master/LICENSE) [![Retire Status](http://retire.insecurity.today/api/image?uri=https://raw.githubusercontent.com/{"gitdown": "gitinfo", "name": "username"}/{"gitdown": "gitinfo", "name": "name"}/master/bower.json)](http://retire.insecurity.today/api/image?uri=https://raw.githubusercontent.com/{"gitdown": "gitinfo", "name": "username"}/{"gitdown": "gitinfo", "name": "name"}/master/bower.json)
 
 > Web Notifications AngularJS Service
 
@@ -17,7 +17,7 @@
 
 <a name="overview"></a>
 ## Overview
-The angular-web-notification is an angular service wrapper for the web notifications API.
+The {"gitdown": "gitinfo", "name": "name"} is an angular service wrapper for the web notifications API.
 
 It is using the HTML5-Desktop-Notifications library which provides a unified API for all browsers.
 
@@ -82,13 +82,13 @@ return {
 Run bower install in your project as follows:
 
 ```sh
-bower install angular-web-notification --save
+bower install {"gitdown": "gitinfo", "name": "name"} --save
 ```
 
 Or if you are using NPM to download client libraries, you can install it as follows:
 
 ```sh
-npm install --save angular-web-notification
+npm install --save {"gitdown": "gitinfo", "name": "name"}
 ```
 
 <a name="limitations"></a>
@@ -97,33 +97,4 @@ The web notifications API is not fully supported in all browsers.
 
 Please see [supported browser versions](http://caniuse.com/#feat=notifications) for more information on the official spec support and at [HTML5-Desktop-Notifications](https://github.com/ttsvetko/HTML5-Desktop-Notifications) for more browser specific API support.
 
-## API Documentation
-See full docs at: [API Docs](docs/api.md)
-
-## Contributing
-See [contributing guide](.github/CONTRIBUTING.md)
-
-<a name="history"></a>
-## Release History
-
-| Date        | Version | Description |
-| ----------- | ------- | ----------- |
-| 2016-06-28  | v0.0.80 | Maintenance |
-| 2016-06-14  | v0.0.78 | Published via NPM (in addition to bower) |
-| 2016-06-14  | v0.0.77 | Maintenance |
-| 2016-03-08  | v0.0.65 | Added webNotification.permissionGranted attribute |
-| 2016-02-24  | v0.0.64 | Maintenance |
-| 2015-09-26  | v0.0.31 | Update bower dependencies |
-| 2015-09-26  | v0.0.30 | Added 'onClick' option to enable adding onclick event handler for the notification |
-| 2015-09-02  | v0.0.29 | Maintenance |
-| 2015-08-16  | v0.0.22 | uglify fix |
-| 2015-08-02  | v0.0.21 | Maintenance |
-| 2015-02-16  | v0.0.7  | Automatic unit tests via karma |
-| 2015-02-05  | v0.0.5  | Doc changes |
-| 2014-12-30  | v0.0.4  | Doc changes |
-| 2014-12-09  | v0.0.3  | API now enables/disables the<br>capability to automatically request for<br>permissions needed to display the notification. |
-| 2014-12-08  | v0.0.2  | Initial release |
-
-<a name="license"></a>
-## License
-Developed by Sagie Gur-Ari and licensed under the Apache 2 open source license.
+{"gitdown": "include", "file": "./README-footer-template.md"}
