@@ -5,7 +5,9 @@ module.exports = function (grunt) {
         tasks: {
             markdownlint: {
                 full: {
-                    config: grunt.file.readJSON('project/config/.markdownrc'),
+                    options: {
+                        config: grunt.file.readJSON('project/config/.markdownrc')
+                    },
                     src: [
                         'README.md',
                         '.github/*.md'
