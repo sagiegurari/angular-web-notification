@@ -7,8 +7,7 @@ module.exports.tasks = {
                 config: '.eslintrc.js'
             },
             src: [
-                '*.js',
-                '<%=BuildConfig.libDirectory%>/**/*.js'
+                require('../../bower.json').main
             ]
         }
     }
