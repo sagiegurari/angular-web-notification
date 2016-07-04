@@ -8,9 +8,8 @@ module.exports.tasks = {
             },
             files: {
                 src: [
-                    require('../../bower.json').main,
-                    'Gruntfile.js',
-                    '<%=BuildConfig.buildDirectory%>/**/*.js'
+                    '*.js',
+                    '<%=BuildConfig.libDirectory%>/**/*.js'
                 ]
             }
         }

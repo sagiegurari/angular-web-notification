@@ -1,6 +1,6 @@
 {
   "name": "angular-web-notification",
-  "version": "0.0.81",
+  "version": "0.0.82",
   "description": "AngularJS service for displaying web notifications.",
   "author": {
     "name": "Sagie Gur-Ari",
@@ -43,6 +43,7 @@
     "grunt-contrib-jshint": "latest",
     "grunt-coveralls": "latest",
     "grunt-eslint": "latest",
+    "grunt-force-task": "latest",
     "grunt-gitdown": "latest",
     "grunt-jscs": "latest",
     "grunt-jsdoc-to-markdown": "latest",

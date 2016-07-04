@@ -6,7 +6,8 @@ module.exports = function (grunt) {
             jslint: {
                 full: {
                     src: [
-                        require('../../bower.json').main
+                        '*.js',
+                        '<%=BuildConfig.libDirectory%>/**/*.js'
                     ],
                     options: {
                         edition: 'latest',

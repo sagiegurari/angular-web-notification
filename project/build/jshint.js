@@ -5,7 +5,8 @@ module.exports.tasks = {
         full: {
             files: {
                 src: [
-                    require('../../bower.json').main
+                    '*.js',
+                    '<%=BuildConfig.libDirectory%>/**/*.js'
                 ]
             }
         },

@@ -5,6 +5,11 @@ module.exports = function (grunt) {
         'concurrent:lint'
     ]);
 
+    var eslintPrefix = '';
+    if (!global.build.options.BuildConfig.es6Support) {
+        eslintPrefix = 'force:';
+    }
+
     return {
         tasks: {
             concurrent: {
@@ -14,7 +19,7 @@ module.exports = function (grunt) {
                         'jsonlint:full',
                         'jshint:full',
                         'jslint:full',
-                        'eslint:full',
+                        eslintPrefix + 'eslint:full',
                         'jscs:full'
                     ]
                 }
