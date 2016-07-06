@@ -6,7 +6,7 @@ module.exports = function (grunt) {
             markdownlint: {
                 full: {
                     options: {
-                        config: grunt.file.readJSON('project/config/.markdownrc')
+                        config: grunt.file.readJSON('project/config/.markdownlintrc')
                     },
                     src: [
                         'README.md',

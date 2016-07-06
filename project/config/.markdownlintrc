@@ -1,0 +1,18 @@
+{
+  "default": true,
+  "line-length": false,
+  "blanks-around-headers": false,
+  "no-duplicate-header": false,
+  "no-inline-html": false,
+  "required-headers": {
+    "headers": [
+      "*",
+      "## Overview",
+      "*",
+      "## API Documentation",
+      "## Contributing",
+      "## Release History",
+      "## License"
+    ]
+  }
+}

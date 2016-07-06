@@ -1,4 +1,5 @@
 # Contribution Guidelines
+<!-- markdownlint-disable required-headers -->
 
 ## Issues
 
