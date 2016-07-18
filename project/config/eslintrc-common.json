@@ -137,6 +137,7 @@
     ],
     "no-lone-blocks": "error",
     "no-lonely-if": "error",
+    "no-mixed-operators": "error",
     "no-loop-func": "error",
     "no-magic-numbers": "off",
     "no-mixed-requires": "error",
@@ -208,6 +209,12 @@
     "no-void": "error",
     "no-warning-comments": "error",
     "no-whitespace-before-property": "error",
+    "object-curly-newline": [
+      "error",
+      {
+        "minProperties": 1
+      }
+    ],
     "object-curly-spacing": [
       "error",
       "always"
@@ -233,6 +240,10 @@
     "radix": "error",
     "require-jsdoc": "error",
     "require-yield": "error",
+    "rest-spread-spacing": [
+      "error",
+      "never"
+    ],
     "semi": "error",
     "semi-spacing": [
       "error",
