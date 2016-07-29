@@ -1,6 +1,6 @@
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2016-07-18  | v0.0.84 | Maintenance |
+| 2016-07-29  | v0.0.85 | Maintenance |
 | 2016-06-14  | v0.0.78 | Published via NPM (in addition to bower) |
 | 2016-06-14  | v0.0.77 | Maintenance |
 | 2016-03-08  | v0.0.65 | Added webNotification.permissionGranted attribute |

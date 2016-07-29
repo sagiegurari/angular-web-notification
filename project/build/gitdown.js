@@ -14,7 +14,7 @@ module.exports.tasks = {
                 headingNesting: {
                     enabled: false
                 }
-        },
+            },
             files: {
                 'README.md': './project/config/README-template.md'
             }

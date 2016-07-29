@@ -2,14 +2,12 @@
 root = true
 
 [*]
+charset = utf-8
 end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 indent_style = space
-indent_size = 2
-
-[*.{js,json,html,htm,css,scss,less,md,txt,properties,yml,go,lua,java}]
-charset = utf-8
-
-[*.{js,go,lua,java}]
 indent_size = 4
+
+[*.{json}]
+indent_size = 2
