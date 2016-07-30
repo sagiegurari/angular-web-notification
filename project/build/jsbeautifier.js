@@ -8,7 +8,7 @@ module.exports.tasks = {
             },
             src: [
                 require('../../bower.json').main,
-                'project/build/**/*.js'
+                'project/**/*.js'
             ]
         }
     }

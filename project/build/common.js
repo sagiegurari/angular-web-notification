@@ -11,7 +11,8 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('format', 'Format Code.', [
-        'jsbeautifier:full'
+        'jsbeautifier:full',
+        'jsonlint:format'
     ]);
 
     grunt.registerTask('docs', 'Generate docs.', [
