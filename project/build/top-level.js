@@ -17,6 +17,7 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('build', 'Run all build steps.', [
+        'format',
         'docs',
         'lint',
         'coverage'
