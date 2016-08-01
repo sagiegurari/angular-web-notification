@@ -8,6 +8,16 @@ env:
     NODE_ENV: "development"
 atomCommandName: "atom-custom:npmbuild"
 targets:
+    test:
+        cmd: "npm"
+        name: "npm test"
+        args:
+            - "run"
+            - "jstest"
+        sh: true
+        env:
+            NODE_ENV: "development"
+        atomCommandName: "atom-custom:npmtest"
     format:
         cmd: "npm"
         name: "npm format"

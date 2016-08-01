@@ -5,14 +5,14 @@ module.exports = function (grunt) {
         'cleanup'
     ]);
 
-    grunt.registerTask('coverage', 'Test for standalone builds.', [
+    grunt.registerTask('jstest', 'Run tests.', [
         'coverage-prepare',
         'karma:full',
         'integration-test'
     ]);
 
     grunt.registerTask('coverage-ci', 'Test for continues integration.', [
-        'coverage',
+        'jstest',
         'coveralls:full'
     ]);
 
@@ -20,7 +20,7 @@ module.exports = function (grunt) {
         'format',
         'docs',
         'lint',
-        'coverage'
+        'jstest'
     ]);
 
     return {};
