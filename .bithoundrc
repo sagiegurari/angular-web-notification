@@ -36,6 +36,7 @@
       "grunt-jsonlint",
       "grunt-karma",
       "grunt-mocha-istanbul",
+      "grunt-shell",
       "husky",
       "istanbul",
       "jit-grunt",
