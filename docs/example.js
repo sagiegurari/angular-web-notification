@@ -12,7 +12,6 @@ window.angular.module('exampleApp', [
 
     return {
         restrict: 'C',
-        template: 'Show Notification',
         link: function (scope, element) {
             element.on('click', function onClick() {
                 webNotification.showNotification('Example Notification', {
