@@ -1,4 +1,5 @@
 <html data-ng-app="exampleApp">
+
     <head>
         <title>Angular Web Notification Example</title>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
@@ -6,8 +7,18 @@
         <script type="text/javascript" src="https://rawgit.com/sagiegurari/HTML5-Desktop-Notifications/master/desktop-notify.js"></script>
         <script type="text/javascript" src="https://rawgit.com/sagiegurari/angular-web-notification/master/angular-web-notification.js"></script>
         <script type="text/javascript" src="example.js"></script>
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     </head>
+
     <body>
-        <button class="show-button"></button>
+        <form>
+            <div class="form-group">
+                <label for="message">Notification Text</label>
+                <input type="text" class="form-control" id="message" placeholder="Notification Text">
+            </div>
+            <button class="show-button btn btn-primary"></button>
+        </form>
     </body>
+
 </html>
