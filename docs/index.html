@@ -16,7 +16,7 @@
         <form class="notification-form" ng-controller="exampleForm">
             <div class="form-group">
                 <label for="message">Notification Text</label>
-                <input type="text" class="form-control" id="message" placeholder="Notification Text" ng-model="text">
+                <textarea class="form-control" rows="3" id="message" placeholder="Notification Text" ng-model="text"></textarea>
             </div>
             <button class="show-button btn btn-primary" notification-text="text">Show Notification</button>
         </form>
