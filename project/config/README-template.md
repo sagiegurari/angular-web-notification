@@ -6,7 +6,7 @@
 > Web Notifications AngularJS Service
 
 * [Overview](#overview)
-* [Demo](http://plnkr.co/edit/SUTiBu?p=preview)
+* [Demo](https://sagiegurari.github.io/angular-web-notification/)
 * [Usage](#usage)
 * [Installation](#installation)
 * [Limitations](#limitations)
@@ -24,7 +24,7 @@ It is using the HTML5-Desktop-Notifications library which provides a unified API
 See [W3 Specification](https://dvcs.w3.org/hg/notifications/raw-file/tip/Overview.html) and [HTML5-Desktop-Notifications](https://github.com/ttsvetko/HTML5-Desktop-Notifications) for more information.
 
 ## Demo
-[Live Demo at Plunker](http://plnkr.co/edit/SUTiBu?p=preview)
+[Live Demo](https://sagiegurari.github.io/angular-web-notification/)
 
 <a name="usage"></a>
 ## Usage
