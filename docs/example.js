@@ -3,7 +3,11 @@
 
 window.angular.module('exampleApp', [
     'angular-web-notification'
-]).directive('showButton', ['webNotification', function (webNotification) {
+]).controller('exampleForm', ['$scope', function ($scope) {
+    'use strict';
+
+    $scope.text = 'This is some notification text.';
+}]).directive('showButton', ['webNotification', function (webNotification) {
     'use strict';
 
     return {
@@ -12,8 +16,8 @@ window.angular.module('exampleApp', [
         link: function (scope, element) {
             element.on('click', function onClick() {
                 webNotification.showNotification('Example Notification', {
-                    body: 'Notification Text...',
-                    icon: '../bower_components/HTML5-Desktop-Notifications2/alert.ico',
+                    body: scope.text,
+                    icon: 'https://rawgit.com/sagiegurari/angular-web-notification/master/alert.ico',
                     onClick: function onNotificationClicked() {
                         console.log('Notification clicked.');
                     },
