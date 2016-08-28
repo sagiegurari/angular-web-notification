@@ -11,7 +11,8 @@
     "Gruntfile.js",
     "test/**/*.js",
     "project/**/*.js",
-    "example/**/*.js"
+    "example/**/*.js",
+    "docs/**/*.js"
   ],
   "test": [
     "**/test/**",
