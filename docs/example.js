@@ -12,10 +12,13 @@ window.angular.module('exampleApp', [
 
     return {
         restrict: 'C',
+        scope: {
+            notificationText: '='
+        },
         link: function (scope, element) {
             element.on('click', function onClick() {
                 webNotification.showNotification('Example Notification', {
-                    body: scope.text,
+                    body: scope.notificationText,
                     icon: 'https://rawgit.com/sagiegurari/angular-web-notification/master/alert.ico',
                     onClick: function onNotificationClicked() {
                         console.log('Notification clicked.');
