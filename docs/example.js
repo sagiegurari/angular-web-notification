@@ -6,6 +6,7 @@ window.angular.module('exampleApp', [
 ]).controller('exampleForm', ['$scope', function ($scope) {
     'use strict';
 
+    $scope.title = 'Example Notification';
     $scope.text = 'This is some notification text.';
 }]).directive('showButton', ['webNotification', function (webNotification) {
     'use strict';
@@ -13,11 +14,12 @@ window.angular.module('exampleApp', [
     return {
         restrict: 'C',
         scope: {
+            notificationTitle: '=',
             notificationText: '='
         },
         link: function (scope, element) {
             element.on('click', function onClick() {
-                webNotification.showNotification('Example Notification', {
+                webNotification.showNotification(scope.notificationTitle, {
                     body: scope.notificationText,
                     icon: 'https://rawgit.com/sagiegurari/angular-web-notification/master/alert.ico',
                     onClick: function onNotificationClicked() {

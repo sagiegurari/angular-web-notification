@@ -15,10 +15,14 @@
     <body>
         <form class="notification-form" ng-controller="exampleForm">
             <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" placeholder="Notification Title" ng-model="title">
+            </div>
+            <div class="form-group">
                 <label for="message">Notification Text</label>
                 <textarea class="form-control" rows="3" id="message" placeholder="Notification Text" ng-model="text"></textarea>
             </div>
-            <button class="show-button btn btn-primary" notification-text="text">Show Notification</button>
+            <button class="show-button btn btn-primary" notification-title="title" notification-text="text">Show Notification</button>
         </form>
     </body>
 
