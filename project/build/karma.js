@@ -1,11 +1,5 @@
 'use strict';
 
-module.exports.tasks = {
-    karma: {
-        full: {
-            configFile: './project/config/karma.conf.js',
-            singleRun: true,
-            browsers: ['PhantomJS']
-        }
-    }
-};
+var commons = require('js-project-commons');
+
+module.exports = commons.grunt.karma;

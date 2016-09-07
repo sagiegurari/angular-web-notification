@@ -1,16 +1,5 @@
 'use strict';
 
-module.exports.tasks = {
-    jshint: {
-        full: {
-            files: {
-                src: [
-                    require('../../bower.json').main
-                ]
-            }
-        },
-        options: {
-            jshintrc: true
-        }
-    }
-};
+var commons = require('js-project-commons');
+
+module.exports = commons.grunt.jshint;

@@ -1,9 +1,5 @@
 'use strict';
 
-module.exports = function (grunt) {
-    grunt.registerTask('integration-test', 'Run integration tests', [
-        'empty'
-    ]);
+var commons = require('js-project-commons');
 
-    return {};
-};
+module.exports = commons.grunt.project;

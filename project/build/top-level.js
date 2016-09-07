@@ -1,27 +1,5 @@
 'use strict';
 
-module.exports = function (grunt) {
-    grunt.registerTask('coverage-prepare', 'Pre test tasks', [
-        'cleanup'
-    ]);
+var commons = require('js-project-commons');
 
-    grunt.registerTask('jstest', 'Run tests.', [
-        'coverage-prepare',
-        'karma:full',
-        'integration-test'
-    ]);
-
-    grunt.registerTask('coverage-ci', 'Test for continues integration.', [
-        'jstest',
-        'coveralls:full'
-    ]);
-
-    grunt.registerTask('build', 'Run all build steps.', [
-        'format',
-        'docs',
-        'lint',
-        'jstest'
-    ]);
-
-    return {};
-};
+module.exports = commons.grunt.topLevel;

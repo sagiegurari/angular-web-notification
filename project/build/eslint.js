@@ -1,14 +1,5 @@
 'use strict';
 
-module.exports.tasks = {
-    eslint: {
-        full: {
-            options: {
-                config: '.eslintrc.js'
-            },
-            src: [
-                require('../../bower.json').main
-            ]
-        }
-    }
-};
+var commons = require('js-project-commons');
+
+module.exports = commons.grunt.eslint;

@@ -1,12 +1,5 @@
 'use strict';
 
-module.exports.tasks = {
-    coveralls: {
-        options: {
-            force: true
-        },
-        full: {
-            src: '<%=BuildConfig.targetDirectory%>/coverage/report/*.info'
-        }
-    }
-};
+var commons = require('js-project-commons');
+
+module.exports = commons.grunt.coveralls;
