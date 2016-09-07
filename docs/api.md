@@ -27,7 +27,7 @@ The web notification service wraps the HTML 5 Web Notifications API as an angula
 * [webNotification](#webNotification) ⇒ <code>object</code>
     * [.allowRequest](#webNotification.allowRequest)
     * [.permissionGranted](#webNotification.permissionGranted)
-    * [.showNotification([title], [options], callback)](#webNotification.showNotification)
+    * [.showNotification([title], [options], [callback])](#webNotification.showNotification)
 
 <a name="webNotification.allowRequest"></a>
 
@@ -43,7 +43,7 @@ True if permission is granted, else false.
 **Access:** public  
 <a name="webNotification.showNotification"></a>
 
-### webNotification.showNotification([title], [options], callback)
+### webNotification.showNotification([title], [options], [callback])
 Shows the notification based on the provided input.<br>
 The callback invoked will get an error object (in case of an error, null in
 case of no errors) and a 'hide' function which can be used to hide the notification.
@@ -56,7 +56,7 @@ case of no errors) and a 'hide' function which can be used to hide the notificat
 | [options] | <code>object</code> | Holds the notification data (web notification API spec for more info) |
 | [options.autoClose] | <code>number</code> | Auto closes the notification after the provided amount of millies (0 or undefined for no auto close) |
 | [options.onClick] | <code>function</code> | An optional onclick event handler |
-| callback | <code>[ShowNotificationCallback](#ShowNotificationCallback)</code> | Called after the show is handled. |
+| [callback] | <code>[ShowNotificationCallback](#ShowNotificationCallback)</code> | Called after the show is handled. |
 
 **Example**  
 ```js

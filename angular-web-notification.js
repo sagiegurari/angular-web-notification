@@ -77,6 +77,22 @@
          * @ngdoc method
          * @function
          * @memberof! webNotification
+         * @alias webNotification.noop
+         * @private
+         *
+         * @description
+         * Empty function
+         *
+         * @returns {undefined} Undefined
+         */
+        var noop = function () {
+            return undefined;
+        };
+
+        /**
+         * @ngdoc method
+         * @function
+         * @memberof! webNotification
          * @alias webNotification.isEnabled
          * @private
          *
@@ -147,7 +163,10 @@
          */
         var parseInput = function (argumentsArray) {
             //callback is always the last argument
-            var callback = argumentsArray.pop();
+            var callback = noop;
+            if (argumentsArray.length && (typeof argumentsArray[argumentsArray.length - 1] === 'function')) {
+                callback = argumentsArray.pop();
+            }
 
             var title = null;
             var options = null;
@@ -189,7 +208,7 @@
          * @param {object} [options] - Holds the notification data (web notification API spec for more info)
          * @param {number} [options.autoClose] - Auto closes the notification after the provided amount of millies (0 or undefined for no auto close)
          * @param {function} [options.onClick] - An optional onclick event handler
-         * @param {ShowNotificationCallback} callback - Called after the show is handled.
+         * @param {ShowNotificationCallback} [callback] - Called after the show is handled.
          * @example
          * ```js
          * webNotification.showNotification('Example Notification', {

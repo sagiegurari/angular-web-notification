@@ -125,6 +125,25 @@ describe('angular-web-notification', function () {
                 });
             });
 
+            it('showNotification no callback test', function (done) {
+                inject(function (webNotification) {
+                    window.notify.setAllowed(function (title, options) {
+                        assert.equal(title, 'Example Notification');
+                        assert.deepEqual(options, {
+                            body: 'Notification Text...',
+                            icon: 'my-icon.ico'
+                        });
+                    });
+
+                    webNotification.showNotification('Example Notification', {
+                        body: 'Notification Text...',
+                        icon: 'my-icon.ico'
+                    });
+
+                    setTimeout(done, 50);
+                });
+            });
+
             it('showNotification no title test', function (done) {
                 inject(function (webNotification) {
                     window.notify.setAllowed(function (title, options) {

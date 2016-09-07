@@ -1,5 +1,6 @@
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
+| 2016-09-07  | v1.0.4  | Callback is now optional |
 | 2016-09-07  | v1.0.3  | Maintenance |
 | 2016-06-14  | v0.0.78 | Published via NPM (in addition to bower) |
 | 2016-06-14  | v0.0.77 | Maintenance |
