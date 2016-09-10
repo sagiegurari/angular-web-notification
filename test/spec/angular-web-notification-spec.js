@@ -5,7 +5,9 @@ describe('angular-web-notification', function () {
 
     var emptyValuesValidation = function (title, options) {
         assert.equal(title, '');
-        assert.deepEqual(options, {});
+        assert.deepEqual(options, {
+            icon: 'http://localhost:8080/favicon.ico' //based on karma configuration
+        });
     };
     var validShowValidation = function (error, hide, done) {
         assert.isNull(error);
@@ -149,7 +151,8 @@ describe('angular-web-notification', function () {
                     window.notify.setAllowed(function (title, options) {
                         assert.equal(title, '');
                         assert.deepEqual(options, {
-                            body: 'no title'
+                            body: 'no title',
+                            icon: 'http://localhost:8080/favicon.ico' //based on karma configuration
                         });
                     });
 
@@ -161,11 +164,32 @@ describe('angular-web-notification', function () {
                 });
             });
 
+            it('showNotification with no icon test', function (done) {
+                inject(function (webNotification) {
+                    window.notify.setAllowed(function (title, options) {
+                        assert.equal(title, 'Example Notification');
+                        console.log(options)//TODO RMOVE
+                        assert.deepEqual(options, {
+                            body: 'Notification Text...',
+                            icon: 'http://localhost:8080/favicon.ico' //based on karma configuration
+                        });
+                    });
+
+                    webNotification.showNotification('Example Notification', {
+                        body: 'Notification Text...'
+                    }, function onShow(error, hide) {
+                        validShowValidation(error, hide, done);
+                    });
+                });
+            });
+
             it('showNotification no options test', function (done) {
                 inject(function (webNotification) {
                     window.notify.setAllowed(function (title, options) {
                         assert.equal(title, 'no options');
-                        assert.deepEqual(options, {});
+                        assert.deepEqual(options, {
+                            icon: 'http://localhost:8080/favicon.ico' //based on karma configuration
+                        });
                     });
 
                     webNotification.showNotification('no options', function onShow(error, hide) {

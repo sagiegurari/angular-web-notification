@@ -108,6 +108,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
+| 2016-09-10  | v1.0.5  | Default to website favicon.ico if icon not provided in options |
 | 2016-09-07  | v1.0.4  | Callback is now optional |
 | 2016-09-07  | v1.0.3  | Maintenance |
 | 2016-06-14  | v0.0.78 | Published via NPM (in addition to bower) |
