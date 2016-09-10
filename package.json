@@ -1,6 +1,6 @@
 {
   "name": "angular-web-notification",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "AngularJS service for displaying web notifications.",
   "author": {
     "name": "Sagie Gur-Ari",
@@ -63,7 +63,6 @@
     "karma-mocha": "latest",
     "karma-phantomjs-launcher": "latest",
     "karma-sinon-chai": "latest",
-    "load-grunt-configs": "latest",
     "lolex": "latest",
     "mocha": "latest",
     "phantomjs-prebuilt": "latest",
