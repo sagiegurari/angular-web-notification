@@ -20,8 +20,7 @@ window.angular.module('exampleApp', [
         link: function (scope, element) {
             element.on('click', function onClick() {
                 webNotification.showNotification(scope.notificationTitle, {
-                    body: scope.notificationText,
-                    icon: 'https://rawgit.com/sagiegurari/angular-web-notification/master/alert.ico',
+                    body: scope.notificationText
                     onClick: function onNotificationClicked() {
                         console.log('Notification clicked.');
                     },
