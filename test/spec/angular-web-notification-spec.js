@@ -6,7 +6,7 @@ describe('angular-web-notification', function () {
     var emptyValuesValidation = function (title, options) {
         assert.equal(title, '');
         assert.deepEqual(options, {
-            icon: 'http://localhost:8080/favicon.ico' //based on karma configuration
+            icon: '/favicon.ico'
         });
     };
     var validShowValidation = function (error, hide, done) {
@@ -152,7 +152,7 @@ describe('angular-web-notification', function () {
                         assert.equal(title, '');
                         assert.deepEqual(options, {
                             body: 'no title',
-                            icon: 'http://localhost:8080/favicon.ico' //based on karma configuration
+                            icon: '/favicon.ico'
                         });
                     });
 
@@ -168,10 +168,9 @@ describe('angular-web-notification', function () {
                 inject(function (webNotification) {
                     window.notify.setAllowed(function (title, options) {
                         assert.equal(title, 'Example Notification');
-                        console.log(options)//TODO RMOVE
                         assert.deepEqual(options, {
                             body: 'Notification Text...',
-                            icon: 'http://localhost:8080/favicon.ico' //based on karma configuration
+                            icon: '/favicon.ico'
                         });
                     });
 
@@ -188,7 +187,7 @@ describe('angular-web-notification', function () {
                     window.notify.setAllowed(function (title, options) {
                         assert.equal(title, 'no options');
                         assert.deepEqual(options, {
-                            icon: 'http://localhost:8080/favicon.ico' //based on karma configuration
+                            icon: '/favicon.ico'
                         });
                     });
 

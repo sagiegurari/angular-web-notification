@@ -123,7 +123,7 @@
          *
          * @param {string} title - The notification title text (defaulted to empty string if null is provided)
          * @param {object} options - Holds the notification data (web notification API spec for more info)
-         * @param {string} [options.icon=favicon.ico] - The notification icon (defaults to the website favicon.ico)
+         * @param {string} [options.icon=/favicon.ico] - The notification icon (defaults to the website favicon.ico)
          * @param {number} [options.autoClose] - Auto closes the notification after the provided amount of millies (0 or undefined for no auto close)
          * @param {function} [options.onClick] - An optional onclick event handler
          * @returns {function} The hide notification function
@@ -139,7 +139,7 @@
 
             //defaults the notification icon to the website favicon.ico
             if (!options.icon) {
-                options.icon = document.location.protocol + '//' + document.location.host + '/favicon.ico';
+                options.icon = '/favicon.ico';
             }
 
             var notification = notifyLib.createNotification(title, options);
@@ -212,7 +212,7 @@
          * @public
          * @param {string} [title] - The notification title text (defaulted to empty string if null is provided)
          * @param {object} [options] - Holds the notification data (web notification API spec for more info)
-         * @param {string} [options.icon=favicon.ico] - The notification icon (defaults to the website favicon.ico)
+         * @param {string} [options.icon=/favicon.ico] - The notification icon (defaults to the website favicon.ico)
          * @param {number} [options.autoClose] - Auto closes the notification after the provided amount of millies (0 or undefined for no auto close)
          * @param {function} [options.onClick] - An optional onclick event handler
          * @param {ShowNotificationCallback} [callback] - Called after the show is handled.
