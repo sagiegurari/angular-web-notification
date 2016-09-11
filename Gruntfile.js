@@ -1,6 +1,6 @@
 'use strict';
 
-/*jslint nomen: true */
+/*jslint nomen: true*/
 //jscs:disable disallowDanglingUnderscores
 /*eslint-disable no-underscore-dangle*/
 
