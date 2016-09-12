@@ -1,6 +1,6 @@
 {
   "name": "angular-web-notification",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "AngularJS service for displaying web notifications.",
   "author": {
     "name": "Sagie Gur-Ari",
