@@ -108,7 +108,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2016-09-12  | v1.0.11 | Maintenance |
+| 2016-09-13  | v1.0.12 | Maintenance |
 | 2016-09-10  | v1.0.6  | Default to website favicon.ico if icon not provided in options |
 | 2016-09-07  | v1.0.4  | Callback is now optional |
 | 2016-09-07  | v1.0.3  | Maintenance |
