@@ -45,6 +45,7 @@
          */
         service.allowRequest = true; //true to enable automatic requesting of permissions if needed
 
+        /*eslint-disable func-name-matching*/
         Object.defineProperty(service, 'permissionGranted', {
             /**
              * Returns the permission granted value.
@@ -72,6 +73,7 @@
                 return permissionGranted;
             }
         });
+        /*eslint-enable func-name-matching*/
 
         /**
          * @ngdoc method

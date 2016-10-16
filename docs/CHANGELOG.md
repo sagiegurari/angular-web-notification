@@ -1,6 +1,6 @@
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2016-10-12  | v1.0.14 | Maintenance |
+| 2016-10-16  | v1.0.15 | Maintenance |
 | 2016-09-10  | v1.0.6  | Default to website favicon.ico if icon not provided in options |
 | 2016-09-07  | v1.0.4  | Callback is now optional |
 | 2016-09-07  | v1.0.3  | Maintenance |
