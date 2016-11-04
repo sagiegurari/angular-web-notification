@@ -32,7 +32,7 @@ In order to use the angular service you first must add the relevant dependencies
 
 ```html
 <script type="text/javascript" src="angular.js"></script>
-<script type="text/javascript" src="HTML5-Desktop-Notifications2/desktop-notify.js"></script>
+<script type="text/javascript" src="html5-desktop-notifications/dist/Notification.js"></script>
 <script type="text/javascript" src="angular-web-notification.js"></script>
 ```
 
