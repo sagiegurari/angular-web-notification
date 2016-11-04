@@ -24,7 +24,7 @@
     "target"
   ],
   "dependencies": {
-    "html5-desktop-notifications": "3.0.0",
+    "html5-desktop-notifications": "~3",
     "angular": "~1"
   },
   "devDependencies": {
