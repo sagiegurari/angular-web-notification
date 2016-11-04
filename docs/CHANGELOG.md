@@ -1,5 +1,6 @@
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
+| 2016-11-04  | v1.0.16 | Upgrading to html5-desktop-notifications 3.0.0 |
 | 2016-10-16  | v1.0.15 | Maintenance |
 | 2016-09-10  | v1.0.6  | Default to website favicon.ico if icon not provided in options |
 | 2016-09-07  | v1.0.4  | Callback is now optional |

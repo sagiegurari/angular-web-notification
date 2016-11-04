@@ -16,9 +16,9 @@
  * @description
  * Initializes the angular web notification service.
  *
- * @param {object} notifyLib - The HTML5 notification library instance
+ * @param {object} NotifyLib - The HTML5 notification library instance
  */
-(function initWebNotification(notifyLib) {
+(function initWebNotification(NotifyLib) {
     'use strict';
 
     var webNotification = window.angular.module('angular-web-notification', []);
@@ -35,6 +35,15 @@
      */
     webNotification.factory('webNotification', function onCreateService() {
         var service = {};
+
+        /**
+         * The internal Notification library used by this angular module.
+         *
+         * @memberof! webNotification
+         * @alias webNotification.lib
+         * @private
+         */
+        service.lib = NotifyLib;
 
         /**
          * True to enable automatic requesting of permissions if needed.
@@ -56,7 +65,7 @@
              * @returns {boolean} True if permission is granted, else false
              */
             get: function getPermission() {
-                var permission = notifyLib.permissionLevel();
+                var permission = NotifyLib.permission;
 
                 /**
                  * True if permission is granted, else false.
@@ -66,7 +75,7 @@
                  * @public
                  */
                 var permissionGranted = false;
-                if (permission === notifyLib.PERMISSION_GRANTED) {
+                if (permission === 'granted') {
                     permissionGranted = true;
                 }
 
@@ -104,13 +113,7 @@
          * @returns {boolean} True if allowed to show web notifications
          */
         var isEnabled = function () {
-            var enabled = notifyLib.isSupported;
-
-            if (enabled) {
-                enabled = service.permissionGranted;
-            }
-
-            return enabled;
+            return service.permissionGranted;
         };
 
         /**
@@ -132,28 +135,31 @@
          */
         var createAndDisplayNotification = function (title, options) {
             var autoClose = 0;
-            if (options && options.autoClose && (typeof options.autoClose === 'number')) {
+            if (options.autoClose && (typeof options.autoClose === 'number')) {
                 autoClose = options.autoClose;
             }
-            notifyLib.config({
-                autoClose: autoClose
-            });
 
             //defaults the notification icon to the website favicon.ico
             if (!options.icon) {
                 options.icon = '/favicon.ico';
             }
 
-            var notification = notifyLib.createNotification(title, options);
+            var notification = new NotifyLib(title, options);
 
             //add onclick handler
-            if (options.onClick && notification && notification.webNotification) {
-                notification.webNotification.onclick = options.onClick;
+            if (options.onClick && notification) {
+                notification.onclick = options.onClick;
             }
 
-            return function hideNotification() {
+            var hideNotification = function () {
                 notification.close();
             };
+
+            if (autoClose) {
+                setTimeout(hideNotification, autoClose);
+            }
+
+            return hideNotification;
         };
 
         /**
@@ -255,7 +261,7 @@
                     hideNotification = createAndDisplayNotification(title, options);
                     callback(null, hideNotification);
                 } else if (service.allowRequest) {
-                    notifyLib.requestPermission(function onRequestDone() {
+                    NotifyLib.requestPermission(function onRequestDone() {
                         if (isEnabled()) {
                             hideNotification = createAndDisplayNotification(title, options);
                             callback(null, hideNotification);
@@ -271,4 +277,4 @@
 
         return service;
     });
-}(window.notify));
+}(window.Notification));

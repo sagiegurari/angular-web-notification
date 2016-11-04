@@ -1,81 +1,60 @@
-window.notify = (function () {
+window.Notification = (function Notification() {
     'use strict';
 
-    var notifyOptions;
-    var permission;
-    var lib = {
-        PERMISSION_GRANTED: 'granted',
-        config: function (options) {
-            notifyOptions = options;
-        },
-        requestPermission: function (callback) {
-            setTimeout(function mockDelay() {
-                callback();
-            }, 5);
-        },
-        permissionLevel: function () {
-            return permission;
-        },
-        getConfig: function () {
-            return notifyOptions;
-        }
+    var permissionInfo = {
+        value: null
     };
 
-    lib.createNotification = function (title, options) {
-        lib.validateNotification(title, options);
+    var oncePermission;
 
-        var notification = {
-            close: function mockClose() {
-                if (options.onClick) {
-                    this.webNotification.onclick();
-                }
+    var Lib = function (title, options) {
+        Lib.validateNotification(title, options);
 
-                return undefined;
-            },
-            webNotification: {}
+        var self = this;
+        self.close = function () {
+            if (options.onClick) {
+                self.onclick();
+            }
         };
-
-        return notification;
     };
 
-    lib.setValidationNotification = function (validateNotification) {
-        lib.validateNotification = validateNotification || function () {
+    Lib.MOCK_NOTIFY = true;
+
+    Object.defineProperty(Lib, 'permission', {
+        enumerable: true,
+        get: function () {
+            return permissionInfo.value;
+        }
+    });
+
+    Lib.requestPermission = function (callback) {
+        if (oncePermission) {
+            oncePermission();
+            oncePermission = null;
+        }
+
+        setTimeout(callback, 5);
+    };
+
+    Lib.setValidationNotification = function (validateNotification) {
+        Lib.validateNotification = validateNotification || function noop() {
             return undefined;
         };
     };
 
-    lib.setAllowed = function (validateNotification) {
-        lib.setValidationNotification(validateNotification);
-
-        lib.isSupported = true;
-        permission = 'granted';
+    Lib.setAllowed = function (validateNotification) {
+        Lib.setValidationNotification(validateNotification);
+        permissionInfo.value = 'granted';
     };
 
-    lib.setSupportedOnly = function () {
-        lib.setValidationNotification(null);
-        lib.isSupported = true;
-        permission = 'not-granted';
+    Lib.setNotAllowed = function (validateNotification) {
+        Lib.setValidationNotification(validateNotification);
+        permissionInfo.value = 'not-granted';
     };
 
-    lib.setNotSupported = function () {
-        lib.setValidationNotification(null);
-        lib.isSupported = false;
-        permission = 'not-granted';
+    Lib.onceRequestPermission = function (callback) {
+        oncePermission = callback;
     };
 
-    lib.setFirstTimePermissions = function (validateNotification) {
-        lib.orgRequestPermission = lib.requestPermission;
-        lib.setValidationNotification(validateNotification);
-
-        lib.requestPermission = function (callback) {
-            permission = 'granted';
-
-            lib.orgRequestPermission(callback);
-            lib.requestPermission = lib.orgRequestPermission;
-        };
-
-        lib.setSupportedOnly();
-    };
-
-    return lib;
+    return Lib;
 }());
