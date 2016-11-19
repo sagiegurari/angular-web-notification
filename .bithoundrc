@@ -40,6 +40,7 @@
       "grunt-karma",
       "grunt-mocha-istanbul",
       "grunt-shell",
+      "grunt-version-check",
       "husky",
       "istanbul",
       "jit-grunt",
