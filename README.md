@@ -32,7 +32,7 @@ In order to use the angular service you first must add the relevant dependencies
 
 ```html
 <script type="text/javascript" src="angular.js"></script>
-<script type="text/javascript" src="html5-desktop-notifications/dist/Notification.js"></script>
+<script type="text/javascript" src="html5-desktop-notifications2/dist/Notification.js"></script>
 <script type="text/javascript" src="angular-web-notification.js"></script>
 ```
 
@@ -108,6 +108,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
+| 2016-11-23  | v1.0.19 | Use forked version of html5-desktop-notifications in order to resolve few issues |
 | 2016-11-19  | v1.0.18 | Maintenance |
 | 2016-11-04  | v1.0.16 | Upgrading to html5-desktop-notifications 3.0.0 |
 | 2016-10-16  | v1.0.15 | Maintenance |

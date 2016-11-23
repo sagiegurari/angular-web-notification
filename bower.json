@@ -1,6 +1,6 @@
 {
   "name": "angular-web-notification",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "AngularJS service for displaying web notifications.",
   "authors": [
     "Sagie Gur-Ari <sagiegurari@gmail.com>"
@@ -24,7 +24,7 @@
     "target"
   ],
   "dependencies": {
-    "html5-desktop-notifications": "~3",
+    "html5-desktop-notifications2": "~3",
     "angular": "~1"
   },
   "devDependencies": {
