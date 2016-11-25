@@ -108,6 +108,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
+| 2016-11-25  | v1.0.20 | Maintenance |
 | 2016-11-23  | v1.0.19 | Use forked version of html5-desktop-notifications in order to resolve few issues |
 | 2016-11-19  | v1.0.18 | Maintenance |
 | 2016-11-04  | v1.0.16 | Upgrading to html5-desktop-notifications 3.0.0 |
@@ -127,7 +128,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 | 2015-02-16  | v0.0.7  | Automatic unit tests via karma |
 | 2015-02-05  | v0.0.5  | Doc changes |
 | 2014-12-30  | v0.0.4  | Doc changes |
-| 2014-12-09  | v0.0.3  | API now enables/disables the<br>capability to automatically request for<br>permissions needed to display the notification. |
+| 2014-12-09  | v0.0.3  | API now enables/disables the capability to automatically request for permissions needed to display the notification. |
 | 2014-12-08  | v0.0.2  | Initial release |
 
 <a name="license"></a>
