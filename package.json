@@ -1,6 +1,6 @@
 {
   "name": "angular-web-notification",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "AngularJS service for displaying web notifications.",
   "author": {
     "name": "Sagie Gur-Ari",
@@ -33,7 +33,9 @@
     "format": "grunt format",
     "build": "grunt build",
     "jstest": "grunt jstest",
+    "debug": "mocha --debug-brk=5858 --no-timeouts --ui bdd --reporter spec --recursive ./test/spec",
     "prepush": "npm run build",
+    "postpublish": "grunt post-publish",
     "grunt": "grunt"
   },
   "devDependencies": {
