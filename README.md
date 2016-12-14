@@ -108,7 +108,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2016-11-26  | v1.0.21 | Maintenance |
+| 2016-12-14  | v1.0.22 | Maintenance |
 | 2016-11-23  | v1.0.19 | Use forked version of html5-desktop-notifications in order to resolve few issues |
 | 2016-11-19  | v1.0.18 | Maintenance |
 | 2016-11-04  | v1.0.16 | Upgrading to html5-desktop-notifications 3.0.0 |
