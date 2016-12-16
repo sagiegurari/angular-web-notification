@@ -9,6 +9,8 @@
   },
   "ignore": [
     "Gruntfile.js",
+    ".eslintrc.js",
+    "stylelint.config.js",
     "test/**/*.js",
     "project/**/*.js",
     "example/**/*.js",

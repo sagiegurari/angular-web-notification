@@ -6,7 +6,9 @@
       "tasks/**/*.js"
     ],
     "excluded": [
-      "**/Gruntfile.js"
+      "**/Gruntfile.js",
+      "**/.eslintrc.js",
+      "**/stylelint.config.js"
     ]
   }
 }
