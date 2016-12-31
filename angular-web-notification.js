@@ -16,7 +16,7 @@
  * @description
  * Initializes the angular web notification service.
  *
- * @param {object} NotifyLib - The HTML5 notification library instance
+ * @param {Object} NotifyLib - The HTML5 notification library instance
  */
 (function initWebNotification(NotifyLib) {
     'use strict';
@@ -28,7 +28,7 @@
      * @name webNotification
      * @namespace webNotification
      * @author Sagie Gur-Ari
-     * @returns {object} The service instance
+     * @returns {Object} The service instance
      *
      * @description
      * The web notification service wraps the HTML 5 Web Notifications API as an angular service.
@@ -62,7 +62,7 @@
              * @function
              * @memberof! webNotification
              * @private
-             * @returns {boolean} True if permission is granted, else false
+             * @returns {Boolean} True if permission is granted, else false
              */
             get: function getPermission() {
                 var permission = NotifyLib.permission;
@@ -110,7 +110,7 @@
          * @description
          * Checks if web notifications are permitted.
          *
-         * @returns {boolean} True if allowed to show web notifications
+         * @returns {Boolean} True if allowed to show web notifications
          */
         var isEnabled = function () {
             return service.permissionGranted;
@@ -126,10 +126,10 @@
          * @description
          * Displays the web notification and returning a 'hide' notification function.
          *
-         * @param {string} title - The notification title text (defaulted to empty string if null is provided)
-         * @param {object} options - Holds the notification data (web notification API spec for more info)
-         * @param {string} [options.icon=/favicon.ico] - The notification icon (defaults to the website favicon.ico)
-         * @param {number} [options.autoClose] - Auto closes the notification after the provided amount of millies (0 or undefined for no auto close)
+         * @param {String} title - The notification title text (defaulted to empty string if null is provided)
+         * @param {Object} options - Holds the notification data (web notification API spec for more info)
+         * @param {String} [options.icon=/favicon.ico] - The notification icon (defaults to the website favicon.ico)
+         * @param {Number} [options.autoClose] - Auto closes the notification after the provided amount of millies (0 or undefined for no auto close)
          * @param {function} [options.onClick] - An optional onclick event handler
          * @returns {function} The hide notification function
          */
@@ -172,8 +172,8 @@
          * @description
          * Returns an object with the show notification input.
          *
-         * @param {array} argumentsArray - An array of all arguments provided to the show notification function
-         * @returns {object} The parsed data
+         * @param {Array} argumentsArray - An array of all arguments provided to the show notification function
+         * @returns {Object} The parsed data
          */
         var parseInput = function (argumentsArray) {
             //callback is always the last argument
@@ -218,10 +218,10 @@
          * @memberof! webNotification
          * @alias webNotification.showNotification
          * @public
-         * @param {string} [title] - The notification title text (defaulted to empty string if null is provided)
-         * @param {object} [options] - Holds the notification data (web notification API spec for more info)
-         * @param {string} [options.icon=/favicon.ico] - The notification icon (defaults to the website favicon.ico)
-         * @param {number} [options.autoClose] - Auto closes the notification after the provided amount of millies (0 or undefined for no auto close)
+         * @param {String} [title] - The notification title text (defaulted to empty string if null is provided)
+         * @param {Object} [options] - Holds the notification data (web notification API spec for more info)
+         * @param {String} [options.icon=/favicon.ico] - The notification icon (defaults to the website favicon.ico)
+         * @param {Number} [options.autoClose] - Auto closes the notification after the provided amount of millies (0 or undefined for no auto close)
          * @param {function} [options.onClick] - An optional onclick event handler
          * @param {ShowNotificationCallback} [callback] - Called after the show is handled.
          * @example

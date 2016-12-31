@@ -62,6 +62,7 @@
       "mocha",
       "phantomjs-prebuilt",
       "promiscuous",
+      "remark-lint",
       "rimraf",
       "sinon",
       "sinon-chai",
