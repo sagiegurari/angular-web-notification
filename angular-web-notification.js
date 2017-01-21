@@ -23,7 +23,8 @@
      * @returns {Object} The service instance
      *
      * @description
-     * The web notification service wraps the HTML 5 Web Notifications API as an angular service.
+     * The web notification service wraps the HTML 5 Web Notifications API as an angular service.<br>
+     * See [simple-web-notification](https://github.com/sagiegurari/simple-web-notification/blob/master/docs/api.md) for more API details.
      */
     webNotification.factory('webNotification', function onCreateService() {
         /**
@@ -64,7 +65,11 @@
          * });
          * ```
          */
+        var showNotification = webNotificationAPI.showNotification;
 
-        return webNotificationAPI;
+        /*istanbul ignore else*/
+        if (showNotification) {
+            return webNotificationAPI;
+        }
     });
 }(window.webNotification));
