@@ -16,6 +16,7 @@ module.exports = function (config) {
             'bower_components/angular/angular.js',
             'bower_components/angular-mocks/angular-mocks.js',
             'test/helpers/**/*.js',
+            'bower_components/simple-web-notification/web-notification.js',
             mainJSFile,
             'test/spec/**/*.js'
         ],

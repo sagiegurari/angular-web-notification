@@ -3,12 +3,6 @@
 describe('angular-web-notification', function () {
     'use strict';
 
-    var emptyValuesValidation = function (title, options) {
-        assert.equal(title, '');
-        assert.deepEqual(options, {
-            icon: '/favicon.ico'
-        });
-    };
     var validShowValidation = function (error, hide, done) {
         assert.isNull(error);
         assert.isFunction(hide);
@@ -19,6 +13,7 @@ describe('angular-web-notification', function () {
             done();
         }
     };
+
     var errorValidation = function (error, hide, done) {
         assert.isDefined(error);
         assert.isNull(hide);
@@ -37,9 +32,9 @@ describe('angular-web-notification', function () {
         assert.isTrue(webNotification.lib.MOCK_NOTIFY);
     }));
 
-    describe('showNotification tests', function () {
-        describe('showNotification allowed tests', function () {
-            it('showNotification all info test', function (done) {
+    describe('showNotification', function () {
+        describe('allowed', function () {
+            it('valid', function (done) {
                 inject(function (webNotification) {
                     assert.isTrue(webNotification.lib.MOCK_NOTIFY);
                     window.Notification.setAllowed(function (title, options) {
@@ -59,7 +54,7 @@ describe('angular-web-notification', function () {
                 });
             });
 
-            it('showNotification with auto close test', function (done) {
+            it('auto close', function (done) {
                 inject(function (webNotification) {
                     assert.isTrue(webNotification.lib.MOCK_NOTIFY);
                     window.Notification.setAllowed(function (title, options) {
@@ -81,127 +76,7 @@ describe('angular-web-notification', function () {
                 });
             });
 
-            it('showNotification no params test', function (done) {
-                inject(function (webNotification) {
-                    assert.isTrue(webNotification.lib.MOCK_NOTIFY);
-                    window.Notification.setAllowed(emptyValuesValidation);
-
-                    webNotification.showNotification(function onShow(error, hide) {
-                        validShowValidation(error, hide, done);
-                    });
-                });
-            });
-
-            it('showNotification no input test', function () {
-                inject(function (webNotification) {
-                    assert.isTrue(webNotification.lib.MOCK_NOTIFY);
-                    window.Notification.setAllowed(emptyValuesValidation);
-
-                    webNotification.showNotification();
-                });
-            });
-
-            it('showNotification too many args test', function (done) {
-                inject(function (webNotification) {
-                    assert.isTrue(webNotification.lib.MOCK_NOTIFY);
-                    window.Notification.setAllowed(emptyValuesValidation);
-
-                    webNotification.showNotification(1, 2, 3, 4, function () {
-                        assert.fail();
-                    });
-
-                    setTimeout(function () {
-                        done();
-                    }, 50);
-                });
-            });
-
-            it('showNotification null info test', function (done) {
-                inject(function (webNotification) {
-                    assert.isTrue(webNotification.lib.MOCK_NOTIFY);
-                    window.Notification.setAllowed(emptyValuesValidation);
-
-                    webNotification.showNotification(null, null, function onShow(error, hide) {
-                        validShowValidation(error, hide, done);
-                    });
-                });
-            });
-
-            it('showNotification no callback test', function (done) {
-                inject(function (webNotification) {
-                    assert.isTrue(webNotification.lib.MOCK_NOTIFY);
-                    window.Notification.setAllowed(function (title, options) {
-                        assert.equal(title, 'Example Notification');
-                        assert.deepEqual(options, {
-                            body: 'Notification Text...',
-                            icon: 'my-icon.ico'
-                        });
-                    });
-
-                    webNotification.showNotification('Example Notification', {
-                        body: 'Notification Text...',
-                        icon: 'my-icon.ico'
-                    });
-
-                    setTimeout(done, 50);
-                });
-            });
-
-            it('showNotification no title test', function (done) {
-                inject(function (webNotification) {
-                    assert.isTrue(webNotification.lib.MOCK_NOTIFY);
-                    window.Notification.setAllowed(function (title, options) {
-                        assert.equal(title, '');
-                        assert.deepEqual(options, {
-                            body: 'no title',
-                            icon: '/favicon.ico'
-                        });
-                    });
-
-                    webNotification.showNotification({
-                        body: 'no title'
-                    }, function onShow(error, hide) {
-                        validShowValidation(error, hide, done);
-                    });
-                });
-            });
-
-            it('showNotification with no icon test', function (done) {
-                inject(function (webNotification) {
-                    assert.isTrue(webNotification.lib.MOCK_NOTIFY);
-                    window.Notification.setAllowed(function (title, options) {
-                        assert.equal(title, 'Example Notification');
-                        assert.deepEqual(options, {
-                            body: 'Notification Text...',
-                            icon: '/favicon.ico'
-                        });
-                    });
-
-                    webNotification.showNotification('Example Notification', {
-                        body: 'Notification Text...'
-                    }, function onShow(error, hide) {
-                        validShowValidation(error, hide, done);
-                    });
-                });
-            });
-
-            it('showNotification no options test', function (done) {
-                inject(function (webNotification) {
-                    assert.isTrue(webNotification.lib.MOCK_NOTIFY);
-                    window.Notification.setAllowed(function (title, options) {
-                        assert.equal(title, 'no options');
-                        assert.deepEqual(options, {
-                            icon: '/favicon.ico'
-                        });
-                    });
-
-                    webNotification.showNotification('no options', function onShow(error, hide) {
-                        validShowValidation(error, hide, done);
-                    });
-                });
-            });
-
-            it('showNotification first time permissions test', function (done) {
+            it('first time permissions', function (done) {
                 inject(function (webNotification) {
                     assert.isTrue(webNotification.lib.MOCK_NOTIFY);
                     window.Notification.setNotAllowed(function (title, options) {
@@ -225,30 +100,10 @@ describe('angular-web-notification', function () {
                     });
                 });
             });
-
-            it('showNotification with onClick', function (done) {
-                inject(function (webNotification) {
-                    assert.isTrue(webNotification.lib.MOCK_NOTIFY);
-                    window.Notification.setAllowed(function (title, options) {
-                        assert.equal(title, 'Example Notification');
-                        assert.isFunction(options.onClick);
-                    });
-
-                    webNotification.showNotification('Example Notification', {
-                        body: 'Notification Text...',
-                        icon: 'my-icon.ico',
-                        onClick: function () {
-                            done();
-                        }
-                    }, function onShow(error, hide) {
-                        validShowValidation(error, hide);
-                    });
-                });
-            });
         });
 
-        describe('showNotification not allowed tests', function () {
-            it('showNotification not allowed test', function (done) {
+        describe('not allowed', function () {
+            it('not allowed', function (done) {
                 inject(function (webNotification) {
                     assert.isTrue(webNotification.lib.MOCK_NOTIFY);
                     window.Notification.setNotAllowed();
@@ -259,7 +114,7 @@ describe('angular-web-notification', function () {
                 });
             });
 
-            it('showNotification not allowed and not allowed to ask permissions test', function (done) {
+            it('not allowed and not allowed to ask permissions', function (done) {
                 inject(function (webNotification) {
                     assert.isTrue(webNotification.lib.MOCK_NOTIFY);
                     window.Notification.setNotAllowed();
