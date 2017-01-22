@@ -72,4 +72,4 @@
             return webNotificationAPI;
         }
     });
-}(window.webNotification));
+}(this.webNotification));
