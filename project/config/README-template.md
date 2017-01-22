@@ -19,9 +19,9 @@
 ## Overview
 The {"gitdown": "gitinfo", "name": "name"} is an angular service wrapper for the web notifications API.
 
-It is using the HTML5-Desktop-Notifications library which provides a unified API for all browsers.
+It is using the [simple-web-notification](https://github.com/sagiegurari/simple-web-notification) library which provides a simple and easy notification API which works across browsers and provides automatic permission handling.
 
-See [W3 Specification](https://dvcs.w3.org/hg/notifications/raw-file/tip/Overview.html) and [HTML5-Desktop-Notifications](https://github.com/ttsvetko/HTML5-Desktop-Notifications) for more information.
+See [W3 Specification](https://dvcs.w3.org/hg/notifications/raw-file/tip/Overview.html) and [simple-web-notification](https://github.com/sagiegurari/simple-web-notification) for more information.
 
 ## Demo
 [Live Demo](https://sagiegurari.github.io/angular-web-notification/)
@@ -96,6 +96,6 @@ npm install --save {"gitdown": "gitinfo", "name": "name"}
 ## Limitations
 The web notifications API is not fully supported in all browsers.
 
-Please see [supported browser versions](http://caniuse.com/#feat=notifications) for more information on the official spec support and at [HTML5-Desktop-Notifications](https://github.com/ttsvetko/HTML5-Desktop-Notifications) for more browser specific API support.
+Please see [supported browser versions](http://caniuse.com/#feat=notifications) for more information on the official spec support.
 
 {"gitdown": "include", "file": "./README-footer-template.md"}

@@ -19,9 +19,9 @@
 ## Overview
 The angular-web-notification is an angular service wrapper for the web notifications API.
 
-It is using the HTML5-Desktop-Notifications library which provides a unified API for all browsers.
+It is using the [simple-web-notification](https://github.com/sagiegurari/simple-web-notification) library which provides a simple and easy notification API which works across browsers and provides automatic permission handling.
 
-See [W3 Specification](https://dvcs.w3.org/hg/notifications/raw-file/tip/Overview.html) and [HTML5-Desktop-Notifications](https://github.com/ttsvetko/HTML5-Desktop-Notifications) for more information.
+See [W3 Specification](https://dvcs.w3.org/hg/notifications/raw-file/tip/Overview.html) and [simple-web-notification](https://github.com/sagiegurari/simple-web-notification) for more information.
 
 ## Demo
 [Live Demo](https://sagiegurari.github.io/angular-web-notification/)
@@ -96,7 +96,7 @@ npm install --save angular-web-notification
 ## Limitations
 The web notifications API is not fully supported in all browsers.
 
-Please see [supported browser versions](http://caniuse.com/#feat=notifications) for more information on the official spec support and at [HTML5-Desktop-Notifications](https://github.com/ttsvetko/HTML5-Desktop-Notifications) for more browser specific API support.
+Please see [supported browser versions](http://caniuse.com/#feat=notifications) for more information on the official spec support.
 
 ## API Documentation
 See full docs at: [API Docs](docs/api.md)
@@ -109,7 +109,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2017-01-22  | v1.2.3  | Maintenance |
+| 2017-01-22  | v1.2.4  | Maintenance |
 | 2017-01-22  | v1.2.0  | Split the internal web notification API into a new project: simple-web-notification |
 | 2017-01-13  | v1.0.26 | Maintenance |
 | 2016-11-23  | v1.0.19 | Use forked version of html5-desktop-notifications in order to resolve few issues |
