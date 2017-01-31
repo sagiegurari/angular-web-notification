@@ -32,7 +32,6 @@ In order to use the angular service you first must add the relevant dependencies
 
 ```html
 <script type="text/javascript" src="angular.js"></script>
-<script type="text/javascript" src="html5-desktop-notifications2/dist/Notification.js"></script>
 <script type="text/javascript" src="simple-web-notification/web-notification.js"></script>
 <script type="text/javascript" src="angular-web-notification.js"></script>
 ```
@@ -109,7 +108,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2017-01-22  | v1.2.4  | Maintenance |
+| 2017-01-31  | v1.2.5  | Maintenance |
 | 2017-01-22  | v1.2.0  | Split the internal web notification API into a new project: simple-web-notification |
 | 2017-01-13  | v1.0.26 | Maintenance |
 | 2016-11-23  | v1.0.19 | Use forked version of html5-desktop-notifications in order to resolve few issues |
