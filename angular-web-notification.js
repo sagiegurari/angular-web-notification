@@ -71,5 +71,4 @@
             return webNotificationAPI;
         }
     });
-    /*istanbul ignore next*/
-}(this.webNotification || window.webNotification));
+}(window.webNotification));

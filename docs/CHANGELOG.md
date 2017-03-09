@@ -1,6 +1,6 @@
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2017-03-09  | v1.2.9  | Maintenance |
+| 2017-03-09  | v1.2.10 | Maintenance |
 | 2017-01-22  | v1.2.0  | Split the internal web notification API into a new project: simple-web-notification |
 | 2017-01-13  | v1.0.26 | Maintenance |
 | 2016-11-23  | v1.0.19 | Use forked version of html5-desktop-notifications in order to resolve few issues |
