@@ -3,7 +3,7 @@ sudo: false
 node_js:
   - "node"
 before_install:
-  - npm install -g npm
+  - npm install -g npm@^3
 before_script:
   - npm install -g bower
   - bower install
