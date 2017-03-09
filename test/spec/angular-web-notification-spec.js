@@ -22,8 +22,21 @@ describe('angular-web-notification', function () {
 
     beforeEach(window.angular.mock.module('angular-web-notification'));
 
-    beforeEach(inject(function (webNotification) {
-        webNotification.allowRequest = true;
+    it('library not defined test', inject(function ($injector) {
+        var showNotification = window.webNotification.showNotification;
+        delete window.webNotification.showNotification;
+
+        var errorDetected = false;
+        try {
+            $injector.get('webNotification').$get();
+        } catch (error) {
+            assert.isDefined(error);
+            errorDetected = true;
+        }
+
+        window.webNotification.showNotification = showNotification;
+
+        assert.isTrue(errorDetected);
     }));
 
     it('init test', inject(function (webNotification) {
@@ -36,7 +49,9 @@ describe('angular-web-notification', function () {
         describe('allowed', function () {
             it('valid', function (done) {
                 inject(function (webNotification) {
+                    webNotification.allowRequest = true;
                     assert.isTrue(webNotification.lib.MOCK_NOTIFY);
+
                     window.Notification.setAllowed(function (title, options) {
                         assert.equal(title, 'Example Notification');
                         assert.deepEqual(options, {
@@ -56,7 +71,9 @@ describe('angular-web-notification', function () {
 
             it('auto close', function (done) {
                 inject(function (webNotification) {
+                    webNotification.allowRequest = true;
                     assert.isTrue(webNotification.lib.MOCK_NOTIFY);
+
                     window.Notification.setAllowed(function (title, options) {
                         assert.equal(title, 'Example Notification');
                         assert.deepEqual(options, {
@@ -78,7 +95,9 @@ describe('angular-web-notification', function () {
 
             it('first time permissions', function (done) {
                 inject(function (webNotification) {
+                    webNotification.allowRequest = true;
                     assert.isTrue(webNotification.lib.MOCK_NOTIFY);
+
                     window.Notification.setNotAllowed(function (title, options) {
                         assert.equal(title, 'first time');
                         assert.deepEqual(options, {
@@ -105,7 +124,9 @@ describe('angular-web-notification', function () {
         describe('not allowed', function () {
             it('not allowed', function (done) {
                 inject(function (webNotification) {
+                    webNotification.allowRequest = true;
                     assert.isTrue(webNotification.lib.MOCK_NOTIFY);
+
                     window.Notification.setNotAllowed();
 
                     webNotification.showNotification('not allowed', {}, function onShow(error, hide) {
@@ -117,6 +138,7 @@ describe('angular-web-notification', function () {
             it('not allowed and not allowed to ask permissions', function (done) {
                 inject(function (webNotification) {
                     assert.isTrue(webNotification.lib.MOCK_NOTIFY);
+
                     window.Notification.setNotAllowed();
                     webNotification.allowRequest = false;
 

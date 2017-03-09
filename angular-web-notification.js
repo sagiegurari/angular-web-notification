@@ -67,7 +67,6 @@
          */
         var showNotification = webNotificationAPI.showNotification;
 
-        /*istanbul ignore else*/
         if (showNotification) {
             return webNotificationAPI;
         }
