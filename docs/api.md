@@ -7,7 +7,7 @@ See [simple-web-notification](https://github.com/sagiegurari/simple-web-notifica
 **Kind**: global namespace  
 **Returns**: <code>Object</code> - The service instance  
 **Ngdoc**: service  
-**Author:** Sagie Gur-Ari  
+**Author**: Sagie Gur-Ari  
 <a name="webNotification.showNotification"></a>
 
 ### webNotification.showNotification([title], [options], [callback])
@@ -15,7 +15,7 @@ Shows the notification based on the provided input.<br>
 The callback invoked will get an error object (in case of an error, null in
 case of no errors) and a 'hide' function which can be used to hide the notification.
 
-**Access:** public  
+**Access**: public  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
