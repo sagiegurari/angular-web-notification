@@ -23,6 +23,10 @@ It is using the [simple-web-notification](https://github.com/sagiegurari/simple-
 
 See [W3 Specification](https://dvcs.w3.org/hg/notifications/raw-file/tip/Overview.html) and [simple-web-notification](https://github.com/sagiegurari/simple-web-notification) for more information.
 
+### Angular 2 and Up
+For angular 2 and above, it is recommanded to use the  [simple-web-notification](https://github.com/sagiegurari/simple-web-notification) library directly.<br>
+It provides the same API and it is not dependend on angular.
+
 ## Demo
 [Live Demo](https://sagiegurari.github.io/angular-web-notification/)
 

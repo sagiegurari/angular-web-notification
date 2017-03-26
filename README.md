@@ -23,6 +23,10 @@ It is using the [simple-web-notification](https://github.com/sagiegurari/simple-
 
 See [W3 Specification](https://dvcs.w3.org/hg/notifications/raw-file/tip/Overview.html) and [simple-web-notification](https://github.com/sagiegurari/simple-web-notification) for more information.
 
+### Angular 2 and Up
+For angular 2 and above, it is recommanded to use the  [simple-web-notification](https://github.com/sagiegurari/simple-web-notification) library directly.<br>
+It provides the same API and it is not dependend on angular.
+
 ## Demo
 [Live Demo](https://sagiegurari.github.io/angular-web-notification/)
 
@@ -108,7 +112,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2017-03-09  | v1.2.10 | Maintenance |
+| 2017-03-26  | v1.2.11 | Maintenance |
 | 2017-01-22  | v1.2.0  | Split the internal web notification API into a new project: simple-web-notification |
 | 2017-01-13  | v1.0.26 | Maintenance |
 | 2016-11-23  | v1.0.19 | Use forked version of html5-desktop-notifications in order to resolve few issues |
