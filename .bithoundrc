@@ -69,6 +69,7 @@
       "rimraf",
       "sinon",
       "sinon-chai",
+      "stylelint-config-standard",
       "time-grunt"
     ]
   }
