@@ -50,6 +50,7 @@
       "grunt-shell",
       "grunt-stylelint",
       "grunt-version-check",
+      "grunt-yaml-validator",
       "husky",
       "istanbul",
       "jit-grunt",
