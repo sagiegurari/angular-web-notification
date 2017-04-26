@@ -72,6 +72,7 @@
       "sinon",
       "sinon-chai",
       "snyk",
+      "stylelint",
       "stylelint-config-standard",
       "time-grunt"
     ]
