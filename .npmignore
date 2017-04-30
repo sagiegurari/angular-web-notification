@@ -7,6 +7,5 @@ target
 Gruntfile.js
 bower_components
 .github
-/project
 test
 example
