@@ -1,6 +1,6 @@
 {
   "name": "angular-web-notification",
-  "version": "1.2.18",
+  "version": "1.2.19",
   "description": "AngularJS service for displaying web notifications.",
   "authors": [
     "Sagie Gur-Ari <sagiegurari@gmail.com>"
@@ -22,8 +22,8 @@
     "tests",
     "example",
     "target",
-    "./*.yml",
-    "./*rc"
+    "/.*.yml",
+    "/.*rc"
   ],
   "dependencies": {
     "simple-web-notification": "latest",

@@ -2,8 +2,8 @@
 .c9
 target
 .temp
-./*.yml
-./*rc
+/.*.yml
+/.*rc
 bower_components
 .github
 /project
