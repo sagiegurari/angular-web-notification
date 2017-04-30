@@ -2,8 +2,9 @@
 .c9
 target
 .temp
-/.*.yml
-/.*rc
+.travis.yml
+.atom.*.yml
+Gruntfile.js
 bower_components
 .github
 /project
