@@ -21,7 +21,9 @@
     "test",
     "tests",
     "example",
-    "target"
+    "target",
+    "./*.yml",
+    "./*rc"
   ],
   "dependencies": {
     "simple-web-notification": "latest",

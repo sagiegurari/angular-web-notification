@@ -2,5 +2,10 @@
 .c9
 target
 .temp
-.travis.yml
+./*.yml
+./*rc
 bower_components
+.github
+/project
+test
+example
