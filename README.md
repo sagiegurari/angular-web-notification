@@ -81,6 +81,48 @@ return {
 }]);
 ```
 
+In case you wish to use service worker web notifications, you must provide the serviceWorkerRegistration in the options as follows:
+
+````js
+//Get the service worker registeration object at the startup of the application.
+//This is an aysnc operation so you should not try to use it before the promise is finished.
+var serviceWorkerRegistration;
+navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+    serviceWorkerRegistration = registration;
+});
+
+//when setting on even handlers in different areas of the application, use that registration object instance (must be done after the registration is available)
+element.on('click', function onClick() {
+    webNotification.showNotification('Example Notification', {
+        serviceWorkerRegistration: serviceWorkerRegistration,
+        body: 'Notification Text...',
+        icon: 'my-icon.ico',
+        actions: [
+            {
+                action: 'Start',
+                title: 'Start'
+            },
+            {
+                action: 'Stop',
+                title: 'Stop'
+            }
+        ],
+        autoClose: 4000 //auto close the notification after 4 seconds (you can manually close it via hide function)
+    }, function onShow(error, hide) {
+        if (error) {
+            window.alert('Unable to show notification: ' + error.message);
+        } else {
+            console.log('Notification Shown.');
+
+            setTimeout(function hideNotification() {
+                console.log('Hiding notification....');
+                hide(); //manually close the notification (you can skip this if you use the autoClose option)
+            }, 5000);
+        }
+    });
+});
+````
+
 <a name="installation"></a>
 ## Installation
 Run bower install in your project as follows:
@@ -112,7 +154,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2017-06-26  | v1.2.23 | Maintenance |
+| 2017-08-25  | v1.2.24 | Document support of service worker web notifications |
 | 2017-01-22  | v1.2.0  | Split the internal web notification API into a new project: simple-web-notification |
 | 2017-01-13  | v1.0.26 | Maintenance |
 | 2016-11-23  | v1.0.19 | Use forked version of html5-desktop-notifications in order to resolve few issues |
