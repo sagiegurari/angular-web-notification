@@ -1,6 +1,6 @@
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2018-06-14  | v1.2.28 | Maintenance |
+| 2018-06-14  | v1.2.29 | Maintenance |
 | 2017-08-25  | v1.2.24 | Document support of service worker web notifications |
 | 2017-01-22  | v1.2.0  | Split the internal web notification API into a new project: simple-web-notification |
 | 2016-11-23  | v1.0.19 | Use forked version of html5-desktop-notifications in order to resolve few issues |
