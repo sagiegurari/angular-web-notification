@@ -11,6 +11,14 @@ window.angular.module('exampleApp', [
 }]).directive('showButton', ['webNotification', function (webNotification) {
     'use strict';
 
+    var serviceWorkerRegistration;
+
+    if (navigator.serviceWorker) {
+        navigator.serviceWorker.register('service-worker.js').then(function (registration) {
+            serviceWorkerRegistration = registration;
+        });
+    }
+
     return {
         restrict: 'C',
         scope: {
@@ -20,6 +28,7 @@ window.angular.module('exampleApp', [
         link: function (scope, element) {
             element.on('click', function onClick() {
                 webNotification.showNotification(scope.notificationTitle, {
+                    serviceWorkerRegistration: serviceWorkerRegistration,
                     body: scope.notificationText,
                     onClick: function onNotificationClicked() {
                         console.log('Notification clicked.');
