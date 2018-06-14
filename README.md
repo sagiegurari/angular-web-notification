@@ -1,7 +1,7 @@
 # angular-web-notification
 
-[![Bower Version](https://img.shields.io/bower/v/angular-web-notification.svg?style=flat)](https://github.com/sagiegurari/angular-web-notification/releases) [![NPM Version](http://img.shields.io/npm/v/angular-web-notification.svg?style=flat)](https://www.npmjs.org/package/angular-web-notification) [![Build Status](https://travis-ci.org/sagiegurari/angular-web-notification.svg)](http://travis-ci.org/sagiegurari/angular-web-notification) [![Coverage Status](https://coveralls.io/repos/sagiegurari/angular-web-notification/badge.svg)](https://coveralls.io/r/sagiegurari/angular-web-notification) [![bitHound Code](https://www.bithound.io/github/sagiegurari/angular-web-notification/badges/code.svg)](https://www.bithound.io/github/sagiegurari/angular-web-notification) [![Inline docs](http://inch-ci.org/github/sagiegurari/angular-web-notification.svg?branch=master)](http://inch-ci.org/github/sagiegurari/angular-web-notification)<br>
-[![License](https://img.shields.io/bower/l/angular-web-notification.svg)](https://github.com/sagiegurari/angular-web-notification/blob/master/LICENSE) [![Known Vulnerabilities](https://snyk.io/test/github/sagiegurari/angular-web-notification/badge.svg)](https://snyk.io/test/github/sagiegurari/angular-web-notification) [![Retire Status](http://retire.insecurity.today/api/image?uri=https://raw.githubusercontent.com/sagiegurari/angular-web-notification/master/bower.json)](http://retire.insecurity.today/api/image?uri=https://raw.githubusercontent.com/sagiegurari/angular-web-notification/master/bower.json)
+[![Bower Version](https://img.shields.io/bower/v/angular-web-notification.svg?style=flat)](https://github.com/sagiegurari/angular-web-notification/releases) [![NPM Version](http://img.shields.io/npm/v/angular-web-notification.svg?style=flat)](https://www.npmjs.org/package/angular-web-notification) [![Build Status](https://travis-ci.org/sagiegurari/angular-web-notification.svg)](http://travis-ci.org/sagiegurari/angular-web-notification) [![Coverage Status](https://coveralls.io/repos/sagiegurari/angular-web-notification/badge.svg)](https://coveralls.io/r/sagiegurari/angular-web-notification) [![Known Vulnerabilities](https://snyk.io/test/github/sagiegurari/angular-web-notification/badge.svg)](https://snyk.io/test/github/sagiegurari/angular-web-notification) [![Inline docs](http://inch-ci.org/github/sagiegurari/angular-web-notification.svg?branch=master)](http://inch-ci.org/github/sagiegurari/angular-web-notification)<br>
+[![License](https://img.shields.io/bower/l/angular-web-notification.svg)](https://github.com/sagiegurari/angular-web-notification/blob/master/LICENSE)
 
 > Web Notifications AngularJS Service
 
@@ -154,7 +154,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2018-04-30  | v1.2.27 | Maintenance |
+| 2018-06-14  | v1.2.28 | Maintenance |
 | 2017-08-25  | v1.2.24 | Document support of service worker web notifications |
 | 2017-01-22  | v1.2.0  | Split the internal web notification API into a new project: simple-web-notification |
 | 2016-11-23  | v1.0.19 | Use forked version of html5-desktop-notifications in order to resolve few issues |

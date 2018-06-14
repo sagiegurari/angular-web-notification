@@ -1,7 +1,9 @@
 language: node_js
-sudo: false
+sudo: required
 node_js:
   - "lts/*"
+addons:
+  chrome: stable
 before_script:
   - npm install -g bower
   - bower install

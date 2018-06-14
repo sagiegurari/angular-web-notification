@@ -1,6 +1,6 @@
 {
   "name": "angular-web-notification",
-  "version": "1.2.27",
+  "version": "1.2.28",
   "description": "AngularJS service for displaying web notifications.",
   "author": {
     "name": "Sagie Gur-Ari",
@@ -49,14 +49,13 @@
     "husky": "latest",
     "js-project-commons": "latest",
     "karma": "latest",
+    "karma-chrome-launcher": "latest",
     "karma-cli": "latest",
     "karma-coverage": "latest",
     "karma-mocha": "latest",
-    "karma-phantomjs-launcher": "latest",
     "karma-sinon-chai": "latest",
     "lolex": "latest",
     "mocha": "latest",
-    "phantomjs-prebuilt": "latest",
     "sinon": "latest",
     "sinon-chai": "latest"
   }
