@@ -1,6 +1,6 @@
 {
   "name": "angular-web-notification",
-  "version": "1.2.31",
+  "version": "2.0.0",
   "description": "AngularJS service for displaying web notifications.",
   "author": {
     "name": "Sagie Gur-Ari",
@@ -42,14 +42,17 @@
     }
   },
   "dependencies": {
+    "angular": "^1",
     "simple-web-notification": "latest"
   },
   "devDependencies": {
+    "angular-mocks": "^1",
     "chai": "latest",
     "grunt": "latest",
     "grunt-cli": "latest",
     "grunt-karma": "latest",
     "husky": "latest",
+    "jquery": "latest",
     "js-project-commons": "latest",
     "karma": "latest",
     "karma-chrome-launcher": "latest",

@@ -1,6 +1,6 @@
 # angular-web-notification
 
-[![NPM Version](http://img.shields.io/npm/v/angular-web-notification.svg?style=flat)](https://www.npmjs.org/package/angular-web-notification) [![Build Status](https://travis-ci.org/sagiegurari/angular-web-notification.svg)](http://travis-ci.org/sagiegurari/angular-web-notification) [![Coverage Status](https://coveralls.io/repos/sagiegurari/angular-web-notification/badge.svg)](https://coveralls.io/r/sagiegurari/angular-web-notification) [![Known Vulnerabilities](https://snyk.io/test/github/sagiegurari/angular-web-notification/badge.svg)](https://snyk.io/test/github/sagiegurari/angular-web-notification) [![Inline docs](http://inch-ci.org/github/sagiegurari/angular-web-notification.svg?branch=master)](http://inch-ci.org/github/sagiegurari/angular-web-notification) [![License](https://img.shields.io/npm/l/angular-web-notification.svg?style=flat)](https://github.com/sagiegurari/angular-web-notification/blob/master/LICENSE)
+[![NPM Version](http://img.shields.io/npm/v/angular-web-notification.svg?style=flat)](https://www.npmjs.org/package/angular-web-notification) [![CI](https://github.com/sagiegurari/angular-web-notification/workflows/CI/badge.svg?branch=master)](https://github.com/sagiegurari/angular-web-notification/actions) [![Coverage Status](https://coveralls.io/repos/sagiegurari/angular-web-notification/badge.svg)](https://coveralls.io/r/sagiegurari/angular-web-notification) [![Known Vulnerabilities](https://snyk.io/test/github/sagiegurari/angular-web-notification/badge.svg)](https://snyk.io/test/github/sagiegurari/angular-web-notification) [![Inline docs](http://inch-ci.org/github/sagiegurari/angular-web-notification.svg?branch=master)](http://inch-ci.org/github/sagiegurari/angular-web-notification) [![License](https://img.shields.io/npm/l/angular-web-notification.svg?style=flat)](https://github.com/sagiegurari/angular-web-notification/blob/master/LICENSE)
 
 > Web Notifications AngularJS Service
 
@@ -153,6 +153,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
+| 2020-05-11  | v2.0.0  | Migrate to github actions, upgrade minimal node version and remove bower |
 | 2019-02-08  | v1.2.31 | Maintenance |
 | 2017-08-25  | v1.2.24 | Document support of service worker web notifications |
 | 2017-01-22  | v1.2.0  | Split the internal web notification API into a new project: simple-web-notification |

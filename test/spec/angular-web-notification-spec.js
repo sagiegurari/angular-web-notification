@@ -3,7 +3,7 @@
 describe('angular-web-notification', function () {
     'use strict';
 
-    var validShowValidation = function (error, hide, done) {
+    const validShowValidation = function (error, hide, done) {
         assert.isNull(error);
         assert.isFunction(hide);
 
@@ -14,7 +14,7 @@ describe('angular-web-notification', function () {
         }
     };
 
-    var errorValidation = function (error, hide, done) {
+    const errorValidation = function (error, hide, done) {
         assert.isDefined(error);
         assert.isNull(hide);
         done();
@@ -23,10 +23,10 @@ describe('angular-web-notification', function () {
     beforeEach(window.angular.mock.module('angular-web-notification'));
 
     it('library not defined test', inject(function ($injector) {
-        var showNotification = window.webNotification.showNotification;
+        const showNotification = window.webNotification.showNotification;
         delete window.webNotification.showNotification;
 
-        var errorDetected = false;
+        let errorDetected = false;
         try {
             $injector.get('webNotification').$get();
         } catch (error) {

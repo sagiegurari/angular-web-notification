@@ -13,7 +13,7 @@
 (function initWebNotification(webNotificationAPI) {
     'use strict';
 
-    var webNotification = window.angular.module('angular-web-notification', []);
+    const webNotification = window.angular.module('angular-web-notification', []);
 
     /**
      * @ngdoc service
@@ -97,7 +97,7 @@
          * });
          * ```
          */
-        var showNotification = webNotificationAPI.showNotification;
+        const showNotification = webNotificationAPI.showNotification;
 
         if (showNotification) {
             return webNotificationAPI;

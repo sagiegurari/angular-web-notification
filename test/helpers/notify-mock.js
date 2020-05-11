@@ -1,16 +1,16 @@
 window.Notification = (function Notification() {
     'use strict';
 
-    var permissionInfo = {
+    const permissionInfo = {
         value: null
     };
 
-    var oncePermission;
+    let oncePermission;
 
-    var Lib = function (title, options) {
+    const Lib = function (title, options) {
         Lib.validateNotification(title, options);
 
-        var self = this;
+        const self = this;
         self.close = function () {
             if (options.onClick) {
                 self.onclick();
@@ -22,7 +22,7 @@ window.Notification = (function Notification() {
 
     Object.defineProperty(Lib, 'permission', {
         enumerable: true,
-        get: function () {
+        get() {
             return permissionInfo.value;
         }
     });

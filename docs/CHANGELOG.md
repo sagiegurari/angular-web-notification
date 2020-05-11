@@ -1,5 +1,6 @@
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
+| 2020-05-11  | v2.0.0  | Migrate to github actions, upgrade minimal node version and remove bower |
 | 2019-02-08  | v1.2.31 | Maintenance |
 | 2017-08-25  | v1.2.24 | Document support of service worker web notifications |
 | 2017-01-22  | v1.2.0  | Split the internal web notification API into a new project: simple-web-notification |
