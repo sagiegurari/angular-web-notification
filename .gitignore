@@ -1,7 +1,8 @@
-.idea
-.c9
 target
 .temp
 node_modules
 bower_components
 npm-debug.log
+package-lock.json
+.nyc_output
+coverage
