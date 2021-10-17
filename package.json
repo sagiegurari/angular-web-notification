@@ -26,20 +26,15 @@
     "example": "example"
   },
   "scripts": {
-    "test": "grunt test",
-    "clean": "grunt cleanup",
-    "lint": "grunt lint",
-    "docs": "grunt docs",
-    "format": "grunt format",
-    "build": "grunt build",
-    "jstest": "grunt jstest",
-    "postpublish": "grunt post-publish",
-    "grunt": "grunt"
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm run build"
-    }
+    "clean": "rm -Rf ./.nyc_output ./coverage",
+    "format": "js-beautify --config ./.jsbeautifyrc --file ./*.js ./test/**/*.js",
+    "lint-js": "eslint ./*.js ./test/**/*.js",
+    "lint-css": "stylelint --allow-empty-input ./docs/**/*.css",
+    "lint": "npm run lint-js && npm run lint-css",
+    "jstest": "karma start --single-run",
+    "docs": "jsdoc2md ./angular-web-notification.js > ./docs/api.md",
+    "test": "npm run clean && npm run format && npm run lint && npm run docs && npm run jstest",
+    "postpublish": "git fetch && git pull"
   },
   "dependencies": {
     "angular": "^1",
@@ -47,22 +42,20 @@
   },
   "devDependencies": {
     "angular-mocks": "^1",
-    "chai": "latest",
-    "grunt": "latest",
-    "grunt-cli": "latest",
-    "grunt-karma": "latest",
-    "husky": "latest",
-    "jquery": "latest",
-    "js-project-commons": "latest",
-    "karma": "latest",
-    "karma-chrome-launcher": "latest",
-    "karma-cli": "latest",
-    "karma-coverage": "latest",
-    "karma-mocha": "latest",
-    "karma-sinon-chai": "latest",
-    "lolex": "latest",
-    "mocha": "latest",
-    "sinon": "latest",
-    "sinon-chai": "latest"
+    "chai": "^4",
+    "eslint": "^8",
+    "jquery": "^3",
+    "js-beautify": "^1",
+    "jsdoc-to-markdown": "^7",
+    "karma": "^6",
+    "karma-chrome-launcher": "^3",
+    "karma-coverage": "^2",
+    "karma-mocha": "^2",
+    "karma-sinon-chai": "^2",
+    "mocha": "^9",
+    "sinon": "^11",
+    "sinon-chai": "^3",
+    "stylelint": "^13",
+    "stylelint-config-standard": "^22"
   }
 }
