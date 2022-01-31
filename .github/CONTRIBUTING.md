@@ -18,7 +18,7 @@ Your pull request build must pass (the build will run automatically).<br>
 You can run the following command locally to ensure the build will pass:
 
 ````sh
-npm run test
+npm test
 ````
 
 * This library is using multiple code inspection tools to validate certain level of standards.<br>The configuration is part of the repository and you can set your favorite IDE using that configuration.<br>You can run the following command locally to ensure the code inspection passes:
