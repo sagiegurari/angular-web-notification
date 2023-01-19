@@ -46,7 +46,7 @@
     "eslint": "^8",
     "jquery": "^3",
     "js-beautify": "^1",
-    "jsdoc-to-markdown": "^7",
+    "jsdoc-to-markdown": "^8",
     "karma": "^6",
     "karma-chrome-launcher": "^3",
     "karma-coverage": "^2",
